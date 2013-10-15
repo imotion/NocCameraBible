@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7FCD1ED1-9AA7-4E6C-A475-1F4E78A1D1EA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NocBible</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E15D7818-217E-4D52-8772-85D5752D8555</key>
+		<string>http://i300.imotionline.net/NocBible_Apple.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NocBible.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E15D7818-217E-4D52-8772-85D5752D8555</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://i300.imotionline.net/NocBible_Apple.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E15D7818-217E-4D52-8772-85D5752D8555</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E15D7818-217E-4D52-8772-85D5752D8555</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NocBible_Apple</string>
+		</dict>
+	</array>
+</dict>
+</plist>

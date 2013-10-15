@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NOC Bible Leica</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" />
+	<link href="jquery-mobile.css" type="text/css" rel="stylesheet" />
+	<link href="photoswipe.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="imot.min.css" />
+	<script type="text/javascript" src="klass.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+	<script type="text/javascript" src="code.photoswipe.jquery-3.0.5.min.js"></script>
+	
+    <script src="NocBible.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    /*
+     * IMPORTANT!!!
+     * REMEMBER TO ADD  rel="external"  to your anchor tags. 
+     * If you don't this will mess with how jQuery Mobile works
+     */
+
+    (function (window, $, PhotoSwipe) {
+
+        $(document).ready(function () {
+            var codice = sessionStorage.getItem('Codice');
+            creaGalleria(codice);
+
+            var options = {};
+            $("#Gallery a").photoSwipe(options);
+
+        });
+
+    }(window, window.jQuery, window.Code.PhotoSwipe));
+
+	</script>
+
+</head>
+  
+<body>
+    
+    <div  data-role="page"  id="Gallery1" class="gallery-page">
+      
+    <div data-role="header">
+        <a href="obiettivo.html" data-icon="back" rel="external" >Indietro</a>
+		<h1 id="modello"></h1>
+    </div>
+    <div data-role="content">
+     
+        <ul id="Gallery" class="gallery">
+          
+        </ul>
+    
+     </div>	
+    <div data-role="footer" data-position="fixed">
+        <h2>NOC Camera Bible</h2>
+    </div>
+    
+</div>
+
+</body>
+</html>
