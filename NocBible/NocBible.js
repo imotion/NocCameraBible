@@ -150,6 +150,8 @@ function getUrlVars() {
 function setCodice(codice)
 {
     sessionStorage.setItem("Codice", codice);
+    var myAudio = document.getElementById("audio");
+    myAudio.play();
 }
 
 function getDomain()
