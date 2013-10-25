@@ -35,6 +35,7 @@
 		6524C3E318070BDC00951F9C /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6524C3D818070BDC00951F9C /* Default-Portrait~ipad.png */; };
 		6524C3E418070BDC00951F9C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6524C3D918070BDC00951F9C /* Default.png */; };
 		6524C3E518070BDC00951F9C /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6524C3DA18070BDC00951F9C /* Default~iphone.png */; };
+		65276CF7181AD79200D0F697 /* M8CLICK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65276CF6181AD79200D0F697 /* M8CLICK.mp3 */; };
 		6585EDD7180D9569009F6137 /* ajax-loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6585EDAC180D9569009F6137 /* ajax-loader.gif */; };
 		6585EDD8180D9569009F6137 /* blogicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6585EDAD180D9569009F6137 /* blogicon.png */; };
 		6585EDD9180D9569009F6137 /* code.photoswipe-3.0.5.js in Resources */ = {isa = PBXBuildFile; fileRef = 6585EDAE180D9569009F6137 /* code.photoswipe-3.0.5.js */; };
@@ -125,6 +126,7 @@
 		6524C3D818070BDC00951F9C /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		6524C3D918070BDC00951F9C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6524C3DA18070BDC00951F9C /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		65276CF6181AD79200D0F697 /* M8CLICK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = M8CLICK.mp3; sourceTree = "<group>"; };
 		6585EDAC180D9569009F6137 /* ajax-loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "ajax-loader.gif"; sourceTree = "<group>"; };
 		6585EDAD180D9569009F6137 /* blogicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogicon.png; sourceTree = "<group>"; };
 		6585EDAE180D9569009F6137 /* code.photoswipe-3.0.5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "code.photoswipe-3.0.5.js"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				6585EDAC180D9569009F6137 /* ajax-loader.gif */,
+				65276CF6181AD79200D0F697 /* M8CLICK.mp3 */,
 				6585EDAD180D9569009F6137 /* blogicon.png */,
 				6585EDAE180D9569009F6137 /* code.photoswipe-3.0.5.js */,
 				6585EDAF180D9569009F6137 /* code.photoswipe-3.0.5.min.js */,
@@ -429,6 +432,7 @@
 				6585EDD8180D9569009F6137 /* blogicon.png in Resources */,
 				6524C3DE18070BDC00951F9C /* Default-Landscape@2x~ipad.png in Resources */,
 				6585EDDA180D9569009F6137 /* code.photoswipe-3.0.5.min.js in Resources */,
+				65276CF7181AD79200D0F697 /* M8CLICK.mp3 in Resources */,
 				6585EDE5180D9569009F6137 /* home_ico18.png in Resources */,
 				6585EDF7180D9569009F6137 /* NocBible.js in Resources */,
 				6585EDD9180D9569009F6137 /* code.photoswipe-3.0.5.js in Resources */,
@@ -636,6 +640,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Daniela/XCodeGit/NocBible_Apple,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NocBible/NocBible-Prefix.pch";
 				INFOPLIST_FILE = "NocBible/NocBible-Info.plist";
@@ -652,6 +660,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Daniela/XCodeGit/NocBible_Apple,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NocBible/NocBible-Prefix.pch";
 				INFOPLIST_FILE = "NocBible/NocBible-Info.plist";
