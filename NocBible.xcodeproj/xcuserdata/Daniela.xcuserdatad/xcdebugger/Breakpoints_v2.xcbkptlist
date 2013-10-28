@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NocBible/NocBible.js"
-            timestampString = "403521735.528987"
+            timestampString = "404412161.473312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "creaTabella"
             landmarkType = "7">
          </BreakpointContent>
