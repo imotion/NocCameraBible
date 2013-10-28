@@ -64,11 +64,11 @@ function getObbiettivo(codice) {
             $('#NumeroLenti').before(cars.NumeroLenti);
             $('#Otturatore').before(cars.Otturatore);
             $('#AngoloCampo').before(cars.AngoloCampo);
-            $('#Mirino').before(cars.DistanzaMinima);
-            $('#Autoscatto').before(cars.Montatura);
-            $('#Occhielli').before(cars.Filtri);
-            $('#NoteSito').before(cars.Paraluce);
-            $('#Tempi').before(Codice6bit);
+            $('#DistanzaMinima').before(cars.DistanzaMinima);
+            $('#Montatura').before(cars.Montatura);
+            $('#Filtri').before(cars.Filtri);
+            $('#Paraluce').before(cars.Paraluce);
+            $('#Codice6bit').before(Codice6bit);
 			
 			var email = 'NocBible consiglia \u000D \u000A' + cars.Modello + '\u000D \u000A';
             email = email + ' http://test.newoldcamera.it/jMobile/obiettivo.html?Codice=' + codice;
