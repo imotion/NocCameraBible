@@ -12,20 +12,24 @@
        <script src="NocBible.js" type="text/javascript"></script>
 <body> 
 
-<div data-role="page" id="page" data-dom-cache="true">
+<div data-role="page" id="page" data-dom-cache="true" style="background-image:url(backhome.png); background-repeat:repeat-x ">
 	<div data-role="header" data-position="fixed">
-		<h1>NOC Camera Bible</h1>
-        <a href="info.html" data-rel="dialog" class="ui-btn-right" data-transition="pop">Info</a>
+    <h4 style="text-align:left; margin-left:30px;"><img src="logo_noc.png" width="100"></h4>
+    <div id="bottoneinfo"  style=" width: 40px; alignment-adjust:top:20px; right: 30px;">
+			 <a href="info.html" data-rel="dialog" data-transition="pop" class="ui-btn-right"><img src="info.png" width="30" height="50"></a>
+             </div>
 	</div>
-	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a href="#corpi" data-transition="pop"><img src="NN1228_DSCN7197.jpg" width="520">CORPI</a></li>
-            <li><a href="#obiettivi" data-transition="pop"><img src="NN1596_DSCN0853.jpg" width="520">OBIETTIVI</a></li>
-		</ul>		
-	</div>
-	<div data-role="footer" data-position="fixed">
-		<h4>by NEWOLDCamera</h4>
-	</div>
+	<div data-role="content" >
+    <div class="ui-grid-a ui-responsive">
+			<div class="ui-block-a" align="center"><a class="wimage2" href="#corpi" data-transition="pop"><img src="corpimg.png" width="150"><br><span style=" text-align:center; color:#000000; text-decoration: none;"><h1>corpi</h1></span></a></div>
+			<div class="ui-block-b" align="center"><a href="#obiettivi" data-transition="pop"><img src="obiettivimg.png" width="150"><br><span style=" text-align:center; color:#000000; text-decoration:none"><h1>obiettivi</h1></span></a></div>
+		</div>	
+        <div class="ui-grid-solo">
+					<div class="ui-block-a" align="center"><a class="wimage2" href="#corpi" data-transition="pop"><img src="gameimg2.png" width="150"><br></a><h1><a class="wimage2" href="#corpi" data-transition="pop"><span style=" text-align:center; color:#000000; text-decoration: none">puzzle game</span></a></h1></div>
+				</div>
+        	</div>
+	<div data-role="footer" data-position="fixed" >
+    <h4><img src="noc_camera_bible.png" width="300"></h4> </div>
 </div>
 
 <div data-role="page" id="corpi" data-dom-cache="true">
@@ -39,14 +43,17 @@
 	<div data-role="header" data-position="fixed">
     <a href="NocBible.html" data-icon="back" >Indietro</a>
 		<h1 id="titolo"></h1>
-        <a href="info.html" data-rel="dialog" class="ui-btn-right" data-transition="pop">Info</a>
+         <div id="bottoneinfo"  style=" width: 40px; alignment-adjust:top:20px; right: 30px;">
+			 <a href="info.html" data-rel="dialog" data-transition="pop" class="ui-btn-right"><img src="info2.png" width="30" height="30"></a>
+             </div>
+   
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" id="elenco" data-inset="true" data-filter="true">
 		</ul>		
 	</div>
 	<div data-role="footer" data-position="fixed">
-		<h4>NEW OLD Camera</h4>
+		<h4><img src="noc_camera_bible.png" width="200"></h4> 
 	</div>
 </div>
 
@@ -60,15 +67,17 @@
 </script>
 	<div data-role="header" data-position="fixed">
     <a href="NocBible.html" data-icon="back">Indietro</a>
-		<h1 id="H1"></h1>
-        <a href="info.html" data-rel="dialog" class="ui-btn-right" data-transition="pop">Info</a>
+		<h1 id="titoloob"></h1>
+        <div id="bottoneinfo"  style=" width: 40px; alignment-adjust:top:20px; right: 30px;">
+			 <a href="info.html" data-rel="dialog" data-transition="pop" class="ui-btn-right"><img src="info2.png" width="30" height="30"></a>
+             </div>
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview" id="elencoob" data-inset="true" data-filter="true">
 		</ul>		
 	</div>
 	<div data-role="footer" data-position="fixed">
-		<h4>NEW OLD Camera</h4>
+		<h4><img src="noc_camera_bible.png" width="200"></h4> 
 	</div>
 </div>
 </body>

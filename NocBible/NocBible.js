@@ -209,7 +209,7 @@ function creaTabellaObiettivi(tipo) {
             var cars = response;
             var row = "";
             $("#elencoob").empty();
-            $('#titolo').html('OBIETTIVI');
+            $('#titoloob').html('OBIETTIVI');
             $.each(cars, function (index, car) {
                 row = row + '<li><a href="./obiettivo.html"';
                 row = row + ' onclick="setCodice(\'' + car.Codice + '\');" data-transition="flip"><img width="80px" src="' + getDomain() + car.Thumbnail + '">';
