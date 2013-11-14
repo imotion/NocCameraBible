@@ -133,6 +133,14 @@ white-space: nowrap;
 .ui-content {
  margin: auto;
 }
+
+.testobtnhome {
+ text-align:center; 
+ color:#000000; 
+ text-decoration:none;
+}
+
+
 	
 /* docs site layout */
 @media all and (max-width: 640px) {
