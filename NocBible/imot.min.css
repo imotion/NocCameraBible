@@ -138,7 +138,9 @@ white-space: nowrap;
  text-align:center; 
  color:#000000; 
  text-decoration:none;
+ 
 }
+
 
 
 	
@@ -151,12 +153,17 @@ white-space: nowrap;
 }
 }
 
-
+	
 /* docs site layout */
-@media all and (max-width: 640px) {
+@media all and (max-width: 480px) {
 .wimage2 img {
-    width  : 50%;
+    width  : 100px;
     height : auto;
 	float: left;
+	font-size: 11px;
 }
+
+
 }
+
+

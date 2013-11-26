@@ -33,16 +33,25 @@
 		652389D21833D670009ED99D /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C71833D670009ED99D /* Default-Portrait~ipad.png */; };
 		652389D31833D670009ED99D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C81833D670009ED99D /* Default.png */; };
 		652389D41833D670009ED99D /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C91833D670009ED99D /* Default~iphone.png */; };
+		6526ED891844E28F00F7EAC2 /* NocGame.html in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED881844E28F00F7EAC2 /* NocGame.html */; };
+		6526ED8B1844E37F00F7EAC2 /* gameimg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED8A1844E37F00F7EAC2 /* gameimg2.png */; };
+		6526ED8D1844E38500F7EAC2 /* obiettivimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED8C1844E38500F7EAC2 /* obiettivimg.png */; };
+		6526ED8F1844E38B00F7EAC2 /* corpimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED8E1844E38B00F7EAC2 /* corpimg.png */; };
+		6526ED911844E4CF00F7EAC2 /* gioco.css in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED901844E4CF00F7EAC2 /* gioco.css */; };
+		6526ED9B1844F1B700F7EAC2 /* corpo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED9A1844F1B700F7EAC2 /* corpo.jpg */; };
+		6526ED9D1844F1D000F7EAC2 /* obiettivo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED9C1844F1D000F7EAC2 /* obiettivo.jpg */; };
+		6526ED9F1844F1E400F7EAC2 /* accessorio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED9E1844F1E400F7EAC2 /* accessorio.jpg */; };
+		6526EDA01844F21E00F7EAC2 /* backhome.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F081833D4B1000EE463 /* backhome.png */; };
+		6526EDA11844F21E00F7EAC2 /* phonegap.0.9.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED981844EBA100F7EAC2 /* phonegap.0.9.4.js */; };
+		6526EDA21844F21E00F7EAC2 /* jquery-1.5.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED961844EB6700F7EAC2 /* jquery-1.5.1.min.js */; };
 		654617A61835327600AB898E /* NocBible.js in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F061833D4B1000EE463 /* NocBible.js */; };
 		65CF1F421833D4B1000EE463 /* code.photoswipe-3.0.5.min.js.map in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F001833D4B1000EE463 /* code.photoswipe-3.0.5.min.js.map */; };
 		65CF1F491833D4B1000EE463 /* 1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F071833D4B1000EE463 /* 1536x2048.png */; };
 		65CF1F4B1833D4B1000EE463 /* blogicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F091833D4B1000EE463 /* blogicon.png */; };
-		65CF1F4C1833D4B1000EE463 /* corpimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F0A1833D4B1000EE463 /* corpimg.png */; };
 		65CF1F581833D4B1000EE463 /* facebookicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F161833D4B1000EE463 /* facebookicon.png */; };
 		65CF1F591833D4B1000EE463 /* favorite_ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F171833D4B1000EE463 /* favorite_ico.png */; };
 		65CF1F5A1833D4B1000EE463 /* flickricon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F181833D4B1000EE463 /* flickricon.png */; };
 		65CF1F5B1833D4B1000EE463 /* gameimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F191833D4B1000EE463 /* gameimg.png */; };
-		65CF1F5C1833D4B1000EE463 /* gameimg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F1A1833D4B1000EE463 /* gameimg2.png */; };
 		65CF1F5D1833D4B1000EE463 /* home_ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F1B1833D4B1000EE463 /* home_ico.png */; };
 		65CF1F5E1833D4B1000EE463 /* home_ico18.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F1C1833D4B1000EE463 /* home_ico18.png */; };
 		65CF1F5F1833D4B1000EE463 /* icons-18-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F1D1833D4B1000EE463 /* icons-18-black.png */; };
@@ -55,7 +64,6 @@
 		65CF1F661833D4B1000EE463 /* info2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F241833D4B1000EE463 /* info2.png */; };
 		65CF1F671833D4B1000EE463 /* logo_noc.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F251833D4B1000EE463 /* logo_noc.png */; };
 		65CF1F681833D4B1000EE463 /* noc_camera_bible.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F261833D4B1000EE463 /* noc_camera_bible.png */; };
-		65CF1F691833D4B1000EE463 /* obiettivimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F271833D4B1000EE463 /* obiettivimg.png */; };
 		65CF1F6A1833D4B1000EE463 /* otherpics_ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F281833D4B1000EE463 /* otherpics_ico.png */; };
 		65CF1F6B1833D4B1000EE463 /* otherpics_ico18.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F291833D4B1000EE463 /* otherpics_ico18.png */; };
 		65CF1F6C1833D4B1000EE463 /* share_ico.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F2A1833D4B1000EE463 /* share_ico.png */; };
@@ -128,6 +136,16 @@
 		652389C71833D670009ED99D /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		652389C81833D670009ED99D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		652389C91833D670009ED99D /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		6526ED881844E28F00F7EAC2 /* NocGame.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NocGame.html; sourceTree = "<group>"; };
+		6526ED8A1844E37F00F7EAC2 /* gameimg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameimg2.png; sourceTree = "<group>"; };
+		6526ED8C1844E38500F7EAC2 /* obiettivimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obiettivimg.png; sourceTree = "<group>"; };
+		6526ED8E1844E38B00F7EAC2 /* corpimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corpimg.png; sourceTree = "<group>"; };
+		6526ED901844E4CF00F7EAC2 /* gioco.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = gioco.css; sourceTree = "<group>"; };
+		6526ED961844EB6700F7EAC2 /* jquery-1.5.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.5.1.min.js"; sourceTree = "<group>"; };
+		6526ED981844EBA100F7EAC2 /* phonegap.0.9.4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = phonegap.0.9.4.js; sourceTree = "<group>"; };
+		6526ED9A1844F1B700F7EAC2 /* corpo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpo.jpg; sourceTree = "<group>"; };
+		6526ED9C1844F1D000F7EAC2 /* obiettivo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obiettivo.jpg; sourceTree = "<group>"; };
+		6526ED9E1844F1E400F7EAC2 /* accessorio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accessorio.jpg; sourceTree = "<group>"; };
 		65CF1F001833D4B1000EE463 /* code.photoswipe-3.0.5.min.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "code.photoswipe-3.0.5.min.js.map"; sourceTree = "<group>"; };
 		65CF1F011833D4B1000EE463 /* code.photoswipe-3.0.5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "code.photoswipe-3.0.5.js"; sourceTree = "<group>"; };
 		65CF1F021833D4B1000EE463 /* code.photoswipe-3.0.5.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "code.photoswipe-3.0.5.min.js"; sourceTree = "<group>"; };
@@ -138,12 +156,10 @@
 		65CF1F071833D4B1000EE463 /* 1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1536x2048.png; sourceTree = "<group>"; };
 		65CF1F081833D4B1000EE463 /* backhome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backhome.png; sourceTree = "<group>"; };
 		65CF1F091833D4B1000EE463 /* blogicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogicon.png; sourceTree = "<group>"; };
-		65CF1F0A1833D4B1000EE463 /* corpimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corpimg.png; sourceTree = "<group>"; };
 		65CF1F161833D4B1000EE463 /* facebookicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookicon.png; sourceTree = "<group>"; };
 		65CF1F171833D4B1000EE463 /* favorite_ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite_ico.png; sourceTree = "<group>"; };
 		65CF1F181833D4B1000EE463 /* flickricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flickricon.png; sourceTree = "<group>"; };
 		65CF1F191833D4B1000EE463 /* gameimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameimg.png; sourceTree = "<group>"; };
-		65CF1F1A1833D4B1000EE463 /* gameimg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameimg2.png; sourceTree = "<group>"; };
 		65CF1F1B1833D4B1000EE463 /* home_ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_ico.png; sourceTree = "<group>"; };
 		65CF1F1C1833D4B1000EE463 /* home_ico18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_ico18.png; sourceTree = "<group>"; };
 		65CF1F1D1833D4B1000EE463 /* icons-18-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-18-black.png"; sourceTree = "<group>"; };
@@ -156,7 +172,6 @@
 		65CF1F241833D4B1000EE463 /* info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info2.png; sourceTree = "<group>"; };
 		65CF1F251833D4B1000EE463 /* logo_noc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_noc.png; sourceTree = "<group>"; };
 		65CF1F261833D4B1000EE463 /* noc_camera_bible.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noc_camera_bible.png; sourceTree = "<group>"; };
-		65CF1F271833D4B1000EE463 /* obiettivimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obiettivimg.png; sourceTree = "<group>"; };
 		65CF1F281833D4B1000EE463 /* otherpics_ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = otherpics_ico.png; sourceTree = "<group>"; };
 		65CF1F291833D4B1000EE463 /* otherpics_ico18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = otherpics_ico18.png; sourceTree = "<group>"; };
 		65CF1F2A1833D4B1000EE463 /* share_ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share_ico.png; sourceTree = "<group>"; };
@@ -223,30 +238,35 @@
 				65CF1F071833D4B1000EE463 /* 1536x2048.png */,
 				65CF1F081833D4B1000EE463 /* backhome.png */,
 				65CF1F091833D4B1000EE463 /* blogicon.png */,
-				65CF1F0A1833D4B1000EE463 /* corpimg.png */,
 				65CF1F161833D4B1000EE463 /* facebookicon.png */,
 				65CF1F171833D4B1000EE463 /* favorite_ico.png */,
 				65CF1F181833D4B1000EE463 /* flickricon.png */,
 				65CF1F191833D4B1000EE463 /* gameimg.png */,
-				65CF1F1A1833D4B1000EE463 /* gameimg2.png */,
+				6526ED8A1844E37F00F7EAC2 /* gameimg2.png */,
+				6526ED8C1844E38500F7EAC2 /* obiettivimg.png */,
+				6526ED9E1844F1E400F7EAC2 /* accessorio.jpg */,
 				65CF1F1B1833D4B1000EE463 /* home_ico.png */,
+				6526ED8E1844E38B00F7EAC2 /* corpimg.png */,
 				65CF1F1C1833D4B1000EE463 /* home_ico18.png */,
 				65CF1F1D1833D4B1000EE463 /* icons-18-black.png */,
+				6526ED881844E28F00F7EAC2 /* NocGame.html */,
 				65CF1F1E1833D4B1000EE463 /* icons-18-white.png */,
 				65CF1F1F1833D4B1000EE463 /* icons-36-black.png */,
 				65CF1F201833D4B1000EE463 /* icons-36-white.png */,
 				65CF1F211833D4B1000EE463 /* icons.png */,
 				65CF1F221833D4B1000EE463 /* icons@2x.png */,
 				65CF1F231833D4B1000EE463 /* info.png */,
+				6526ED9C1844F1D000F7EAC2 /* obiettivo.jpg */,
 				65CF1F241833D4B1000EE463 /* info2.png */,
 				65CF1F251833D4B1000EE463 /* logo_noc.png */,
 				65CF1F261833D4B1000EE463 /* noc_camera_bible.png */,
-				65CF1F271833D4B1000EE463 /* obiettivimg.png */,
 				65CF1F281833D4B1000EE463 /* otherpics_ico.png */,
+				6526ED901844E4CF00F7EAC2 /* gioco.css */,
 				65CF1F291833D4B1000EE463 /* otherpics_ico18.png */,
 				65CF1F2A1833D4B1000EE463 /* share_ico.png */,
 				65CF1F2B1833D4B1000EE463 /* share_ico18.png */,
 				65CF1F2C1833D4B1000EE463 /* sharefacebook.png */,
+				6526ED9A1844F1B700F7EAC2 /* corpo.jpg */,
 				65CF1F2D1833D4B1000EE463 /* sharegoogle.png */,
 				65CF1F2E1833D4B1000EE463 /* twittericon.png */,
 				65CF1F2F1833D4B1000EE463 /* NN1228_DSCN7197.jpg */,
@@ -254,8 +274,10 @@
 				65CF1F311833D4B1000EE463 /* corpo.html */,
 				65CF1F321833D4B1000EE463 /* immagini.html */,
 				65CF1F331833D4B1000EE463 /* immaginiOB.html */,
+				6526ED981844EBA100F7EAC2 /* phonegap.0.9.4.js */,
 				65CF1F341833D4B1000EE463 /* info.html */,
 				65CF1F351833D4B1000EE463 /* NocBible.html */,
+				6526ED961844EB6700F7EAC2 /* jquery-1.5.1.min.js */,
 				65CF1F361833D4B1000EE463 /* obiettivo.html */,
 				65CF1F371833D4B1000EE463 /* ajax-loader.gif */,
 				65CF1F381833D4B1000EE463 /* codecomputerlovelogo.gif */,
@@ -448,6 +470,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6526EDA01844F21E00F7EAC2 /* backhome.png in Resources */,
+				6526EDA11844F21E00F7EAC2 /* phonegap.0.9.4.js in Resources */,
+				6526EDA21844F21E00F7EAC2 /* jquery-1.5.1.min.js in Resources */,
 				654617A61835327600AB898E /* NocBible.js in Resources */,
 				65CF1F771833D4B1000EE463 /* NocBible.html in Resources */,
 				65CF1F731833D4B1000EE463 /* corpo.html in Resources */,
@@ -457,7 +482,6 @@
 				65CF1F781833D4B1000EE463 /* obiettivo.html in Resources */,
 				65CF1F591833D4B1000EE463 /* favorite_ico.png in Resources */,
 				65CF1F5F1833D4B1000EE463 /* icons-18-black.png in Resources */,
-				65CF1F5C1833D4B1000EE463 /* gameimg2.png in Resources */,
 				65CF1F6F1833D4B1000EE463 /* sharegoogle.png in Resources */,
 				65CF1F7C1833D4B1000EE463 /* loader.gif in Resources */,
 				652389D41833D670009ED99D /* Default~iphone.png in Resources */,
@@ -477,22 +501,28 @@
 				65CF1F7D1833D4B1000EE463 /* imot.css in Resources */,
 				65CF1F761833D4B1000EE463 /* info.html in Resources */,
 				65CF1F4B1833D4B1000EE463 /* blogicon.png in Resources */,
+				6526ED8B1844E37F00F7EAC2 /* gameimg2.png in Resources */,
+				6526ED8F1844E38B00F7EAC2 /* corpimg.png in Resources */,
 				65CF1F6C1833D4B1000EE463 /* share_ico.png in Resources */,
-				65CF1F4C1833D4B1000EE463 /* corpimg.png in Resources */,
+				6526ED8D1844E38500F7EAC2 /* obiettivimg.png in Resources */,
 				65CF1F821833D4B1000EE463 /* M8CLICK.mp3 in Resources */,
 				65CF1F791833D4B1000EE463 /* ajax-loader.gif in Resources */,
+				6526ED891844E28F00F7EAC2 /* NocGame.html in Resources */,
 				652389CC1833D670009ED99D /* Default-Landscape-1024~ipad.png in Resources */,
 				652389D21833D670009ED99D /* Default-Portrait~ipad.png in Resources */,
+				6526ED911844E4CF00F7EAC2 /* gioco.css in Resources */,
 				65CF1F491833D4B1000EE463 /* 1536x2048.png in Resources */,
+				6526ED9F1844F1E400F7EAC2 /* accessorio.jpg in Resources */,
 				65CF1F601833D4B1000EE463 /* icons-18-white.png in Resources */,
 				65CF1F701833D4B1000EE463 /* twittericon.png in Resources */,
 				65CF1F6E1833D4B1000EE463 /* sharefacebook.png in Resources */,
+				6526ED9B1844F1B700F7EAC2 /* corpo.jpg in Resources */,
 				65CF1F751833D4B1000EE463 /* immaginiOB.html in Resources */,
 				65CF1F621833D4B1000EE463 /* icons-36-white.png in Resources */,
 				65CF1F711833D4B1000EE463 /* NN1228_DSCN7197.jpg in Resources */,
+				6526ED9D1844F1D000F7EAC2 /* obiettivo.jpg in Resources */,
 				50C8238D17F4845B001BEFA7 /* Images.xcassets in Resources */,
 				65CF1F7E1833D4B1000EE463 /* imot.min.css in Resources */,
-				65CF1F691833D4B1000EE463 /* obiettivimg.png in Resources */,
 				652389D31833D670009ED99D /* Default.png in Resources */,
 				65CF1F7B1833D4B1000EE463 /* error.gif in Resources */,
 				65CF1F641833D4B1000EE463 /* icons@2x.png in Resources */,
