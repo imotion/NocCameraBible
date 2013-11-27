@@ -45,6 +45,9 @@
 		6526EDA11844F21E00F7EAC2 /* phonegap.0.9.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED981844EBA100F7EAC2 /* phonegap.0.9.4.js */; };
 		6526EDA21844F21E00F7EAC2 /* jquery-1.5.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 6526ED961844EB6700F7EAC2 /* jquery-1.5.1.min.js */; };
 		654617A61835327600AB898E /* NocBible.js in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F061833D4B1000EE463 /* NocBible.js */; };
+		65B6FF101845F33D009DEABF /* jquery.mobile-1.0.1.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 65B6FF0F1845F33D009DEABF /* jquery.mobile-1.0.1.min.css */; };
+		65B6FF151845F380009DEABF /* jquery-1.9.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 65B6FF111845F34D009DEABF /* jquery-1.9.1.min.js */; };
+		65B6FF161845F380009DEABF /* jquery.mobile-1.3.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 65B6FF131845F361009DEABF /* jquery.mobile-1.3.2.min.js */; };
 		65CF1F421833D4B1000EE463 /* code.photoswipe-3.0.5.min.js.map in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F001833D4B1000EE463 /* code.photoswipe-3.0.5.min.js.map */; };
 		65CF1F491833D4B1000EE463 /* 1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F071833D4B1000EE463 /* 1536x2048.png */; };
 		65CF1F4B1833D4B1000EE463 /* blogicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65CF1F091833D4B1000EE463 /* blogicon.png */; };
@@ -146,6 +149,9 @@
 		6526ED9A1844F1B700F7EAC2 /* corpo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpo.jpg; sourceTree = "<group>"; };
 		6526ED9C1844F1D000F7EAC2 /* obiettivo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obiettivo.jpg; sourceTree = "<group>"; };
 		6526ED9E1844F1E400F7EAC2 /* accessorio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accessorio.jpg; sourceTree = "<group>"; };
+		65B6FF0F1845F33D009DEABF /* jquery.mobile-1.0.1.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "jquery.mobile-1.0.1.min.css"; sourceTree = "<group>"; };
+		65B6FF111845F34D009DEABF /* jquery-1.9.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.9.1.min.js"; sourceTree = "<group>"; };
+		65B6FF131845F361009DEABF /* jquery.mobile-1.3.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery.mobile-1.3.2.min.js"; sourceTree = "<group>"; };
 		65CF1F001833D4B1000EE463 /* code.photoswipe-3.0.5.min.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "code.photoswipe-3.0.5.min.js.map"; sourceTree = "<group>"; };
 		65CF1F011833D4B1000EE463 /* code.photoswipe-3.0.5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "code.photoswipe-3.0.5.js"; sourceTree = "<group>"; };
 		65CF1F021833D4B1000EE463 /* code.photoswipe-3.0.5.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "code.photoswipe-3.0.5.min.js"; sourceTree = "<group>"; };
@@ -261,6 +267,9 @@
 				65CF1F251833D4B1000EE463 /* logo_noc.png */,
 				65CF1F261833D4B1000EE463 /* noc_camera_bible.png */,
 				65CF1F281833D4B1000EE463 /* otherpics_ico.png */,
+				65B6FF0F1845F33D009DEABF /* jquery.mobile-1.0.1.min.css */,
+				65B6FF111845F34D009DEABF /* jquery-1.9.1.min.js */,
+				65B6FF131845F361009DEABF /* jquery.mobile-1.3.2.min.js */,
 				6526ED901844E4CF00F7EAC2 /* gioco.css */,
 				65CF1F291833D4B1000EE463 /* otherpics_ico18.png */,
 				65CF1F2A1833D4B1000EE463 /* share_ico.png */,
@@ -470,6 +479,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B6FF151845F380009DEABF /* jquery-1.9.1.min.js in Resources */,
+				65B6FF161845F380009DEABF /* jquery.mobile-1.3.2.min.js in Resources */,
 				6526EDA01844F21E00F7EAC2 /* backhome.png in Resources */,
 				6526EDA11844F21E00F7EAC2 /* phonegap.0.9.4.js in Resources */,
 				6526EDA21844F21E00F7EAC2 /* jquery-1.5.1.min.js in Resources */,
@@ -487,6 +498,7 @@
 				652389D41833D670009ED99D /* Default~iphone.png in Resources */,
 				65CF1F631833D4B1000EE463 /* icons.png in Resources */,
 				652389CB1833D670009ED99D /* Default-Landscape-1024@2x~ipad.png in Resources */,
+				65B6FF101845F33D009DEABF /* jquery.mobile-1.0.1.min.css in Resources */,
 				652389CF1833D670009ED99D /* Default-Portrait-1024@2x~ipad.png in Resources */,
 				652389CA1833D670009ED99D /* Default-568h@2x.png in Resources */,
 				65CF1F651833D4B1000EE463 /* info.png in Resources */,

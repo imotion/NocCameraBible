@@ -6,10 +6,10 @@
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
                 <title>NOC GAME - Photo Puzzle</title>
                 <script type="text/javascript" src="phonegap.0.9.4.js"></script>
-                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+                <link rel="stylesheet" href="jquery.mobile-1.0.1.min.css" />
                 
-                <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-                <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+                <script src="jquery-1.9.1.min.js"></script>
+                <script src="jquery.mobile-1.3.2.min.js"></script>
                 <link rel="stylesheet" href="imot.min.css" />
                 <link rel="stylesheet" href="gioco.css">
                     <script type="text/javascript">
@@ -220,7 +220,9 @@
                           
                           });
                         </script>
-    </head>
+                    
+                    
+                    </head>
     <body class="ui-mobile-viewport">
         <!-- Menu page -->
         <div id="menu" data-role="page" data-url="menu" class="ui-page ui-body-c ui-page-active">
@@ -323,7 +325,7 @@
              </div> -->
             
             <!-- Menu FOOTER -->
-            <div data-role="footer" data-position="fixed" >
+            <div id="footer" data-role="footer" data-position="fixed" >
                 <h4><img src="noc_camera_bible.png" width="300"></h4> </div>
         </div><!-- fine Menu page -->
         
@@ -360,7 +362,7 @@
             </div>
             
             <!-- Game FOOTER -->
-            <div data-role="footer" data-position="fixed" >
+            <div id="footer2" data-role="footer" data-position="fixed" >
                 <h4><img src="noc_camera_bible.png" width="300"></h4> </div>
         </div><!-- fine GAME page -->
         
@@ -371,10 +373,10 @@
             <div data-role="header" data-backbtn="false">
                 <a href="NocGame.html" rel="external" data-icon="back" >Menù</a>
                 <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
-                    COMPLIMENTI HAI VINTO!!! 
+                    COMPLIMENTI HAI VINTO!!!
                 </h1>
             </div>
-            <!-- Well Done CONTENT -->    
+            <!-- Well Done CONTENT -->
             <div data-role="content">
                 <div id="centrato3" style="width: 100%; text-align:center">
                     <img id="well-done-image" width="700" height="700" src="corpo.jpg">
@@ -382,14 +384,54 @@
                         </div><!-- Well Done CENTRATO3 -->
             </div>
             <!-- Well Done FOOTER -->
-            <div data-role="footer" data-position="fixed" >
-                <h4><img src="noc_camera_bible.png" width="300"></h4> </div> 
-        </div><!-- fine WELL DONE page -->  
+            <div id="footer3" data-role="footer" data-position="fixed" >
+                <h4><img src="noc_camera_bible.png" width="300"></h4> </div>
+        </div><!-- fine WELL DONE page -->
         
-        
-        
-        
-        <div class="ui-loader ui-body-a ui-corner-all" style="top: 311px;"><span class="ui-icon ui-icon-loading spin"></span><h1>loading</h1></div><div data-role="dialog" data-theme="b" class="ui-dialog ui-page ui-body-a" role="dialog"><div data-role="header" class="ui-corner-top ui-overlay-shadow ui-bar-a ui-header" role="banner"><a href="#" data-icon="delete" data-rel="back" data-iconpos="notext" class="ui-btn-left ui-btn ui-btn-up-a ui-btn-icon-notext ui-btn-corner-all ui-shadow" title="Close" data-theme="a"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Close</span><span class="ui-icon ui-icon-delete ui-icon-shadow"></span></span></a><div class="ui-title">Choose Difficulty:</div></div><div data-role="content" class="ui-content ui-body-c ui-corner-bottom ui-overlay-shadow" role="main"></div></div><div id="woo_head" class="woo_content" style="display:none;"><script type="text/html" id="L-template"><iframe id="L-margin" name="L-margin"  class="woo_content_container woo_main_content" src="chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/loader.gif" style="display: block !important;"><p>Iframes not supported.</p></iframe></script><iframe id="L-margin" name="L-margin" class="woo_content_container woo_main_content" src="chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/loader.gif" style="display: block !important;">&lt;p&gt;Iframes not supported.&lt;/p&gt;</iframe><div id="woo_projected" class="woo_content_trigger hide_txt"><span style="display:none;"><em style="font-size:11px; font-style:normal; font-weight:bold;line-height:26px;text-indent:0;text-decoration:none;overflow:hidden;color:#fff;float:left;position:absolute;text-align:center;left:1px;top:0px;height:25px;width:22px;"></em></span><span class="loader L-loader" style="display:none;"><img class="" src="chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/loader.gif"></span><div id="woo_initiate" class="trigger_ctrl"><a id="clickable" href="javascript:void(0);" class="hide_txt" style="display:none;">Trigger</a></div></div><div class="woo_controllers upper_header"><a id="woo_hide" href="Javascript:void(0)" class="hide_margin hide_txt" title="Hide"><span style="background-image:url(chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/woo-cancel.png)">x</span></a></div></div><div id="shadowMeasureIt"></div><div id="divCoordMeasureIt"></div><div id="divRectangleMeasureIt"><div id="divRectangleBGMeasureIt"></div></div>
-        
-        
-    </body></html>
+        <div class="ui-loader ui-body-a ui-corner-all" style="top: 311px;">
+            <span class="ui-icon ui-icon-loading spin"></span>
+            <h1>loading</h1>
+        </div>
+        <div data-role="dialog" data-theme="b" class="ui-dialog ui-page ui-body-a" role="dialog">
+            <div data-role="header" class="ui-corner-top ui-overlay-shadow ui-bar-a ui-header" role="banner">
+                <a href="#" data-icon="delete" data-rel="back" data-iconpos="notext" class="ui-btn-left ui-btn ui-btn-up-a ui-btn-icon-notext ui-btn-corner-all ui-shadow" title="Close" data-theme="a">
+                    <span class="ui-btn-inner ui-btn-corner-all">
+                        <span class="ui-btn-text">Close</span>
+                        <span class="ui-icon ui-icon-delete ui-icon-shadow"></span>
+                    </span></a>
+                <div class="ui-title">Choose Difficulty:
+                </div>
+            </div>
+            <div data-role="content" class="ui-content ui-body-c ui-corner-bottom ui-overlay-shadow" role="main">
+            </div>
+        </div>
+        <div id="woo_head" class="woo_content" style="display:none;">
+            <script type="text/html" id="L-template"><iframe id="L-margin" name="L-margin"  class="woo_content_container woo_main_content" src="chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/loader.gif" style="display: block !important;">
+                <p>Iframes not supported.</p></iframe>
+                </script>
+            <iframe id="L-margin" name="L-margin" class="woo_content_container woo_main_content" src="chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/loader.gif" style="display: block !important;">&lt;p&gt;Iframes not supported.&lt;/p&gt;</iframe>
+            <div id="woo_projected" class="woo_content_trigger hide_txt">
+                <span style="display:none;">
+                    <em style="font-size:11px; font-style:normal; font-weight:bold;line-height:26px;text-indent:0;text-decoration:none;overflow:hidden;color:#fff;float:left;position:absolute;text-align:center;left:1px;top:0px;height:25px;width:22px;"></em>
+                </span>
+                <span class="loader L-loader" style="display:none;">
+                    <img class="" src="chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/loader.gif"></span>
+                <div id="woo_initiate" class="trigger_ctrl">
+                    <a id="clickable" href="javascript:void(0);" class="hide_txt" style="display:none;">Trigger</a>
+                </div>
+            </div>
+            <div class="woo_controllers upper_header"><a id="woo_hide" href="Javascript:void(0)" class="hide_margin hide_txt" title="Hide">
+                <span style="background-image:url(chrome-extension://hlngmmdolgbdnnimbmblfhhndibdipaf/images/woo-cancel.png)">x</span>
+            </a>
+            </div>
+        </div>
+        <div id="shadowMeasureIt">
+        </div>
+        <div id="divCoordMeasureIt">
+        </div>
+        <div id="divRectangleMeasureIt">
+            <div id="divRectangleBGMeasureIt">
+            </div>
+        </div>
+    </body>
+</html>
