@@ -235,33 +235,54 @@
                 </h1>
             </div>
             <!-- Menu CONTENT -->
+            
             <div data-role="content" class="ui-content" role="main">
+                
                 <div id="pic-choice" data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-                    <fieldset data-role="controlgroup"  class="ui-corner-all ui-controlgroup ui-controlgroup-vertical">
-                        <legend>Scegli foto:</legend>
-                        <input type="radio" name="pic-choice" id="pic-choice-1" value="corpo.jpg" checked="checked">
-                            <label for="pic-choice-1" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-left ui-btn-active ui-corner-top">
-                                <span class="ui-btn-text">
-                                    <img width="32" src="corpo.jpg">
-                                        Corpo
-                                        </span>
-                            </label>
-                            <input type="radio" name="pic-choice" id="pic-choice-2" value="obiettivo.jpg">
-                                <label for="pic-choice-2" data-theme="c" class="ui-btn ui-btn-icon-left ui-btn-up-c">
-                                    <span class="ui-btn-text">
-                                        <img width="32" src="obiettivo.jpg">
-                                            Obiettivo
-                                            </span>
-                                </label>
+                    <fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
+                        <div role="heading" class="ui-controlgroup-label">Scegli la foto:</div><div class="ui-controlgroup-controls">
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="pic-choice" id="pic-choice-1" value="corpo.jpg" checked="checked">
+                                    <label for="pic-choice-1" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-corner-left ui-btn-up-c">
+                                        <img width="60" src="corpo.jpg"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="pic-choice" id="pic-choice-2" value="obiettivo.jpg">
+                                    <label for="pic-choice-2" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="obiettivo.jpg"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
                                 <input type="radio" name="pic-choice" id="pic-choice-3" value="accessorio.jpg">
-                                    <label for="pic-choice-3" data-theme="c" class="ui-btn ui-btn-icon-left ui-corner-bottom ui-controlgroup-last ui-btn-up-c">
-                                        <span class="ui-btn-text">
-                                            <img width="32" src="accessorio.jpg">
-                                                Accessorio
-                                                </span>
-                                    </label>
-                                    </fieldset>
+                                    <label for="pic-choice-3" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="accessorio.jpg"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="pic-choice" id="pic-choice-4" value="corpo2.jpg">
+                                    <label for="pic-choice-4" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="corpo2.jpg"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="pic-choice" id="pic-choice-5" value="obiettivo2.jpg">
+                                    <label for="pic-choice-5" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="obiettivo2.jpg"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="pic-choice" id="pic-choice-6" value="accessorio2.jpg">
+                                    <label for="pic-choice-6" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-corner-right ui-controlgroup-last ui-btn-up-c">
+                                        <img width="60" src="accessorio2.jpg"></label>
+                                    </div>
+                            
+                        </div></fieldset>
+                    
                 </div>
+                
+                
                 <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
                     <label for="difficulty" class="select ui-select">Scegli difficoltà:</label>
                     <div id class="ui-select">

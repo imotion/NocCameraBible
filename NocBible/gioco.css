@@ -4,9 +4,6 @@
 
 /* game site layout */
 
-label img {
-            margin-right:10px;
-        }
         
 #pic-frame {
             width:700px;
@@ -34,4 +31,27 @@ label img {
 
 .landscape, .landscape .ui-page {
 min-height: 100%;
+}
+
+.ui-checkbox .ui-btn-icon-left .ui-btn-inner, .ui-radio .ui-btn-icon-left .ui-btn-inner {
+padding-left: 10px;
+}
+
+.ui-btn-inner {
+padding: .6em 10px;
+padding-top: 0.6em;
+padding-right: 10px;
+}
+
+.ui-controlgroup-horizontal .ui-checkbox, .ui-controlgroup-horizontal .ui-radio {
+float: left;
+margin: 0 3px 0 0;
+}
+
+@media (min-width: 450px)
+.ui-field-contain label.ui-select {
+vertical-align: top;
+display: inline-block;
+width: 11%;
+margin: 0 2% 0 0;
 }
