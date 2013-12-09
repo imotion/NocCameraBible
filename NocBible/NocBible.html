@@ -36,9 +36,16 @@
         <div data-role="page" id="corpi" data-dom-cache="true">
             
             <script type="text/javascript">
-                $(document).on('pagebeforeshow', '#corpi', function () {
+                $(document).on('pageshow', '#corpi', function () {
+                               $.mobile.loading( "show", {
+                                                text: "loading...",
+                                                textVisible: "true",
+                                                theme: "d",
+                                                textonly: "false",
+                                                });
                                creaTabella("CO");
-                               });
+    
+                });
                 </script>
             <audio id="audio" src="M8CLICK.mp3"></audio>
             <div data-role="header" data-position="fixed">
@@ -61,10 +68,16 @@
         <div data-role="page" id="obiettivi" data-dom-cache="true">
             
             <script type="text/javascript">
-                $(document).on('pagebeforeshow', '#obiettivi', function () {
-                               creaTabellaObiettivi("OB");
+                $(document).on('pageshow', '#obiettivi', function () {
+                               $.mobile.loading( "show", {
+                                                text: "loading...",
+                                                textVisible: "true",
+                                                theme: "d",
+                                                textonly: "false",
+                                                });
+                                creaTabellaObiettivi("OB");
                                });
-                               
+               
                 </script>
             <div data-role="header" data-position="fixed">
                 <a href="NocBible.html" data-icon="back">Indietro</a>
