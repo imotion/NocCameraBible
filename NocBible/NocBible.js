@@ -185,6 +185,7 @@ function creaTabella(tipo) {
                   });
            $('#elenco').html(row);
            $("#elenco").listview('refresh');
+           $.mobile.loading( "hide" );
            },
            failure: function (msg) {
            console.log("elModelli failure");
@@ -218,6 +219,7 @@ function creaTabellaObiettivi(tipo) {
                   });
            $('#elencoob').html(row);
            $("#elencoob").listview('refresh');
+           $.mobile.loading( "hide" );
            },
            failure: function (msg) {
            console.log("elModelli failure");
