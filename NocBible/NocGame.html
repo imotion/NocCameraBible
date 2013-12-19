@@ -223,7 +223,7 @@
                     
                     
                     </head>
-    <body class="ui-mobile-viewport">
+    <body class="ui-mobile-viewport ui-overlay-c" id="ui-page-top">
         <!-- Menu page -->
         <div id="menu" data-role="page" data-url="menu" class="ui-page ui-body-c ui-page-active">
             
@@ -382,12 +382,12 @@
                 
             </div>
             
-            <!-- Game FOOTER -->
-            <div id="footer2" data-role="footer" data-position="fixed" >
+            <!-- Menu FOOTER -->
+            <div id="footer" data-role="footer" data-position="fixed" >
                 <h4><img src="noc_camera_bible.png" width="300"></h4> </div>
-        </div><!-- fine GAME page -->
+        </div><!-- fine Menu page -->
         
-        <!-- Well done popup page -->
+        </div><!-- Well done popup page -->
         
         <div id="well-done" data-role="page" data-url="well-done">
             <!-- Well Done HEADER -->
@@ -396,18 +396,29 @@
                 <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
                     COMPLIMENTI HAI VINTO!!!
                 </h1>
+                
             </div>
             <!-- Well Done CONTENT -->
             <div data-role="content">
-                <div id="centrato3" style="width: 100%; text-align:center">
+                
+                <div id="centrato3" style=" width: 100%; text-align:center">
                     <img id="well-done-image" width="700" height="700" src="corpo.jpg">
-                        
-                        </div><!-- Well Done CENTRATO3 -->
-            </div>
+                        </div>
+                
+            </div><!-- Well Done CENTRATO3 -->
+            
             <!-- Well Done FOOTER -->
             <div id="footer3" data-role="footer" data-position="fixed" >
-                <h4><img src="noc_camera_bible.png" width="300"></h4> </div>
-        </div><!-- fine WELL DONE page -->
+                <h4><img src="noc_camera_bible.png" width="300"></h4>
+            </div>
+        </div> <!-- fine WELL DONE page -->
+        
+        
+		<!--<div data-role="popup" id="popupCloseRight" class="ui-content ui-popup ui-overlay-shadow ui-corner-all ui-body-c" style="width:350px;" aria-disabled="false" data-disabled="false" data-shadow="true" data-corners="true" data-transition="none" data-position-to="origin">
+         <a href="NocGame.html" rel="external" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-a" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" title="Close"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Close</span><span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span></span></a>
+         <img id="well-done-image2" width="350" height="181" src="complimenti.png">
+         </div>
+         -->
         
         <div class="ui-loader ui-body-a ui-corner-all" style="top: 311px;">
             <span class="ui-icon ui-icon-loading spin"></span>
