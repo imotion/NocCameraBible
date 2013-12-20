@@ -7,10 +7,8 @@
                 <title>NOC GAME - Photo Puzzle</title>
                 <script type="text/javascript" src="phonegap.0.9.4.js"></script>
                 <link rel="stylesheet" href="jquery.mobile-1.0.1.min.css" />
-                
-                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.css" />
-				<script src="http://code.jquery.com/mobile/1.2.0-rc.2/jquery.mobile-1.2.0-rc.2.min.js"></script>
-                
+                <link rel="stylesheet" href="jquery.mobile-1.2.0-rc.2.min.css" />
+				<script src="jquery.mobile-1.2.0-rc.2.min.js"></script>
                 <script src="jquery-1.9.1.min.js"></script>
                 <script src="jquery.mobile-1.3.2.min.js"></script>
                 <link rel="stylesheet" href="imot.min.css" />
@@ -233,7 +231,7 @@
             <div data-role="header" data-backbtn="false" class="ui-bar-a ui-header" role="banner">
                 <a href="NocBible.html" rel="external" data-icon="back" >Indietro</a>
                 <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
-                    NOC Puzzle Game
+                    NOC GAME - Photo Puzzle
                 </h1>
             </div>
             <!-- Menu CONTENT -->
@@ -242,7 +240,7 @@
                 
                 <div id="pic-choice" data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
                     <fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
-                        <div role="heading" class="ui-controlgroup-label">Scegli la foto:</div><div class="ui-controlgroup-controls">
+                        <div role="heading" class="ui-controlgroup-label"><span style="color: #c34043; font-weight: bold">SCEGLI LA FOTO PER IL PUZZLE:</span></div><div class="ui-controlgroup-controls">
                             
                             <div class="ui-radio">
                                 <input type="radio" name="pic-choice" id="pic-choice-1" value="corpo.jpg" checked="checked">
@@ -286,7 +284,7 @@
                 
                 
                 <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-                    <label for="difficulty" class="select ui-select">Scegli difficoltà:</label>
+                    <label for="difficulty" class="select ui-select"><span style="color: #c34043; font-weight: bold">SCEGLI LA DIFFICOLTA':</span></label>
                     <div id class="ui-select">
                         <select name="difficulty" id="difficulty" tabindex="-1">
                             <option value="3">
@@ -316,8 +314,9 @@
                         </select>
                     </div>
                 </div>
-                <a id="play-button" href="#game" data-role="button" data-theme="c" class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Gioca!</span></span></a>
-                
+                <div id="buttonplay" style="padding-top: 30px">
+                    <a id="play-button" href="#game" style="background: #c34043; color:#ffffff; " data-role="button" data-theme="c" class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">GIOCA!</span></span></a>
+           		</div>
             </div><!-- fine menu CONTENT -->
             
             <!-- Menu HIDDEN per scelta numero tessere -->
@@ -357,7 +356,7 @@
             <!-- Game HEADER -->
             <div data-role="header" data-backbtn="false">
                 <a href="#menu" data-role="button" >Menù Principale</a>
-                <h1>NOC Puzzle Game </h1>
+                <h1>NOC GAME - Photo Puzzle </h1>
             </div>
             <!-- Game CONTENT -->
             
@@ -407,7 +406,7 @@
                     <img id="well-done-image" width="700" height="700" src="corpo.jpg">
                         </div>
                 <div data-role="popup" id="myPopup" data-history="false">
-                    <img id="well-done-image2" width="350" height="181" src="complimenti.png">
+                    <img id="well-done-image2" width="429" height="218" src="congratulation.png">
                         </div>
                 <script type="text/javascript" language="JavaScript">
                     $(":jqmData(role='page'):last").on("pageshow", function(event) {
