@@ -67,8 +67,9 @@ function getObbiettivo(codice) {
            $('#Montatura').before(cars.Montatura);
            $('#Filtri').before(cars.Filtri);
            $('#Paraluce').before(cars.Paraluce);
-           $('#Codice6bit').before(Codice6bit);
-           
+           $('#Codice6bit').before(cars.Codice6bit);
+           $('#NoteSito').before(cars.NoteSito);
+           $('#NumeroMatricola').before(cars.NumeroMatricola);
            var email = 'NocBible consiglia \u000D \u000A' + cars.Modello + '\u000D \u000A';
            email = email + ' http://test.newoldcamera.it/jMobile/obiettivo.html?Codice=' + codice;
            $("#mailto").attr('href', 'mailto:?subject=NocBible consiglia&body='+email);
