@@ -14,6 +14,7 @@
 <body> 
 <div id="wrapper">
 <div data-role="page" id="scheda1">
+    <audio id="audio" src="M8CLICK.mp3"></audio>
     <script type="text/javascript">
 
         $(function () {
@@ -25,16 +26,20 @@
 				if (codice == null) {
                     codice = getUrlVars()["Codice"];
                 }
-                getObbiettivo(codice);
+								var sql=sessionStorage.getItem('Sql');
+                getObbiettivo(codice,sql);
                 getImmaginni(codice);
             }); //main
         });
     </script>
 	<div data-role="header" data-position="fixed">
     <a href="NocBible.html#obiettivi" rel="external" data-icon="back">Obiettivi</a>
+		<h1 id="prev"></h1>
 		<h1>SCHEDA DETTAGLIO OBIETTIVO</h1>
+		<h1 id="next"></h1>
 	</div>
 	<div data-role="content">
+      <audio id="audio" src="M8CLICK.mp3"></audio>
       <p></p>
       <div id="thumbnail" class="wimage"></div>
       <br>

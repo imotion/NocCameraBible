@@ -4,16 +4,22 @@ function getParam(codice)
     var valore = "codice=" + escape(codice);
     return valore;
 }
-function getArticolo(codice) {
+function getSql(sql)
+{
+		var valore = "sql=" + escape(sql);
+    return valore;
+}
+function getArticolo(codice,sql) {
     $.ajaxSetup({
                 async: false
                 });
     $.ajax({
            type: "GET",
            crossDomain: true,
-           url: getDomain()+"NocBible.asmx/Articolo",
+           url: getDomain()+"NocBible.asmx/ArticoloSql",
            contentType: "application/json; charset=utf-8",
-           data:getParam(codice),
+           data:""+getParam(codice)+"&"+getSql(sql)+"",
+					 //data:"{codice:'"+codice+"',sql:'"+sql+"'}",
            dataType: "jsonp",
            async: false,
            success: function (response) {
@@ -35,6 +41,21 @@ function getArticolo(codice) {
            var email = 'NocBible consiglia \u000D \u000A' + cars.Modello + '\u000D \u000A';
            email = email + ' http://test.newoldcamera.it/jMobile/corpo.html?Codice=' + codice;
            $("#mailto").attr('href', 'mailto:?subject=NocBible consiglia&body='+email);
+           var prec='';
+           if(cars.Precedente!="") {
+                prec='<a href="./corpo.html"';
+                prec = prec + ' onclick="setCodice(\'' + escape(cars.Precedente) + '\',\''+escape(cars.DecodeSql)+'\');" rel="external" data-ajax="false">Precedente</a>';
+            } else {
+                prec='';
+            }
+            $("#prev").html(prec);
+            if(cars.Sucessivo!="") {
+                var next='<a href="./corpo.html"';
+                next = next + ' onclick="setCodice(\'' + escape(cars.Sucessivo) + '\',\''+escape(cars.DecodeSql)+'\');" rel="external" data-ajax="false">Sucessivo</a>';
+            } else {
+                next='';
+            }
+            $("#next").html(next);
            },
            failure: function (msg) {
            console.log("Scheda load failure");
@@ -43,16 +64,16 @@ function getArticolo(codice) {
            });
 }
 
-function getObbiettivo(codice) {
+function getObbiettivo(codice,sql) {
     $.ajaxSetup({
                 async: false
                 });
     $.ajax({
            type: "GET",
            crossDomain: true,
-           url: getDomain() + "NocBible.asmx/Articolo",
+           url: getDomain() + "NocBible.asmx/ArticoloSql",
            contentType: "application/json; charset=utf-8",
-           data: getParam(codice),
+           data:""+getParam(codice)+"&"+getSql(sql)+"",
            dataType: "jsonp",
            async: false,
            success: function (response) {
@@ -73,12 +94,34 @@ function getObbiettivo(codice) {
            var email = 'NocBible consiglia \u000D \u000A' + cars.Modello + '\u000D \u000A';
            email = email + ' http://test.newoldcamera.it/jMobile/obiettivo.html?Codice=' + codice;
            $("#mailto").attr('href', 'mailto:?subject=NocBible consiglia&body='+email);
+					  var prec='';
+					 if(cars.Precedente!="") {	
+							prec='<a href="./obiettivo.html"';
+							prec = prec + ' onclick="setCodice(\'' + escape(cars.Precedente) + '\',\''+escape(cars.DecodeSql)+'\');" rel="external" data-ajax="false">Precedente</a>';
+					 } else {
+							prec='';
+					 }
+					$("#prev").html(prec);
+					if(cars.Sucessivo!="") { 	
+						var next='<a href="./obiettivo.html"';
+						next = next + ' onclick="setCodice(\'' + escape(cars.Sucessivo) + '\',\''+escape(cars.DecodeSql)+'\');" rel="external" data-ajax="false">Sucessivo</a>';
+					 } else {
+							next='';
+						}
+					 $("#next").html(next);
            },
            failure: function (msg) {
            console.log("Scheda load failure");
            alert(msg);
            }
            });
+}
+
+function pausecomp(millis)
+{
+    var curDate = null;
+    do { curDate = new Date(); }
+    while(curDate-date < millis);
 }
 
 function creaGalleria(codice) {
@@ -147,16 +190,18 @@ function getUrlVars() {
     return vars;
 }
 
-function setCodice(codice)
+function setCodice(codice,sql)
 {
     sessionStorage.setItem("Codice", codice);
-    var myAudio = document.getElementById("audio");
-    myAudio.play();
+    sessionStorage.setItem("Sql", sql);
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'M8CLICK.mp3');
+    audioElement.play();
 }
 
 function getDomain()
 {
-    return "http://test.newoldcamera.it/";
+    return "http://test.newoldcamera.it//";
 }
 
 function creaTabella(tipo) {
@@ -179,7 +224,7 @@ function creaTabella(tipo) {
            
            $.each(cars, function (index, car) {
                   row = row + '<li class="ui-li-desc"><a href="corpo.html"';
-                  row = row + ' onclick="setCodice(\'' + car.Codice + '\');" data-rola="page" data-transition="flip"><img width="80px" src="'+getDomain() + car.Thumbnail + '">';
+                  row = row + ' onclick="setCodice(\'' + escape(car.Codice) + '\',\''+escape(car.Sql)+'\');" data-rola="page" data-transition="flip"><img width="80px" src="'+getDomain() + car.Thumbnail + '">';
                   row = row + '<h2>' + car.oModello + '<h2>';
                   row = row + '<div id="ricerca" class="ricerca">' + car.Ricerca + '</div>';
                   row = row + '</a></li>';
@@ -213,7 +258,7 @@ function creaTabellaObiettivi(tipo) {
            $('#titoloob').html('OBIETTIVI');
            $.each(cars, function (index, car) {
                   row = row + '<li><a href="./obiettivo.html"';
-                  row = row + ' onclick="setCodice(\'' + car.Codice + '\');" data-transition="flip"><img width="80px" src="' + getDomain() + car.Thumbnail + '">';
+                  row = row + ' onclick="setCodice(\'' + escape(car.Codice) + '\',\''+escape(car.Sql)+'\');" data-rola="page" data-transition="flip"><img width="80px" src="'+getDomain() + car.Thumbnail + '">';
                   row = row + '<h2>' + car.oModello + '<h2>';
                   row = row + '<div id="ricerca" class="ricerca">' + car.Ricerca + '</div>';
                   row = row + '</a></li>';

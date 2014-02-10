@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Reachability.h"
+#import "AVFoundation/AVAudioPlayer.h"
+#import <UIKit/UIKit.h>
 
 @interface ViewController ()
 
@@ -23,7 +25,7 @@ UIAlertView *messageload;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+
     isload=TRUE;
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [self.view sizeToFit];
@@ -86,6 +88,19 @@ UIAlertView *messageload;
                                             delegate:nil
                                    cancelButtonTitle:nil
                                    otherButtonTitles:nil];
+    NSString *fileaudio=[[NSBundle mainBundle] pathForResource:@"M8CLICK" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:fileaudio];
+    _audioPlayer = [[AVAudioPlayer alloc]
+                                  initWithContentsOfURL:url
+                                  error:nil];
+    NSURLRequest *pagina=[thisWebView request];
+    NSURL *urlpagina=[pagina URL];
+    NSString *nomepagina=[urlpagina absoluteString];
+    if([nomepagina rangeOfString:@"corpo"].location!=NSNotFound)
+        [_audioPlayer play];
+    else
+        if([nomepagina rangeOfString:@"obiettivo"].location!=NSNotFound)
+            [_audioPlayer play];
     [messageload show];
 }
 

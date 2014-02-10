@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5076B99917F5939B008D2F26 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076B99817F5939B008D2F26 /* Reachability.m */; };
 		5076B99B17F594A8008D2F26 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076B99A17F594A8008D2F26 /* SystemConfiguration.framework */; };
+		50B6568118A8ECC200F3E64C /* M8CLICK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50B6568018A8ECC200F3E64C /* M8CLICK.mp3 */; };
 		50C8237217F4845B001BEFA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8237117F4845B001BEFA7 /* Foundation.framework */; };
 		50C8237417F4845B001BEFA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8237317F4845B001BEFA7 /* CoreGraphics.framework */; };
 		50C8237617F4845B001BEFA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C8237517F4845B001BEFA7 /* UIKit.framework */; };
@@ -128,6 +129,7 @@
 		5076B99717F59393008D2F26 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5076B99817F5939B008D2F26 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5076B99A17F594A8008D2F26 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		50B6568018A8ECC200F3E64C /* M8CLICK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = M8CLICK.mp3; sourceTree = "<group>"; };
 		50C8236E17F4845B001BEFA7 /* NocBible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NocBible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C8237117F4845B001BEFA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50C8237317F4845B001BEFA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -320,6 +322,7 @@
 				65CF1F051833D4B1000EE463 /* klass.min.js */,
 				65CF1F3A1833D4B1000EE463 /* loader.gif */,
 				65CF1F251833D4B1000EE463 /* logo_noc.png */,
+				50B6568018A8ECC200F3E64C /* M8CLICK.mp3 */,
 				65CF1F401833D4B1000EE463 /* M8CLICK.mp3 */,
 				65CF1F2F1833D4B1000EE463 /* NN1228_DSCN7197.jpg */,
 				65CF1F301833D4B1000EE463 /* NN1596_DSCN0853.jpg */,
@@ -526,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				653DC150187D539D00624143 /* Main_iPad.storyboard in Resources */,
+				50B6568118A8ECC200F3E64C /* M8CLICK.mp3 in Resources */,
 				653DC151187D539D00624143 /* Main_iPhone.storyboard in Resources */,
 				6540683C187C555B00E57F8A /* code.photoswipe-3.0.5.min.js in Resources */,
 				6540683B187C555600E57F8A /* code.photoswipe.jquery-3.0.5.js in Resources */,

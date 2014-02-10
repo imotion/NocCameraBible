@@ -13,7 +13,6 @@
     
     <body>
         <div id="wrapper">
-            
             <div data-role="page" id="scheda1">
                 <script type="text/javascript">
                     
@@ -24,18 +23,22 @@
                       $(function () {
                         var codice = sessionStorage.getItem('Codice');
                         if (codice == null) {
-                        codice = getUrlVars()["Codice"];
+                            codice = getUrlVars()["Codice"];
                         }
-                        getArticolo(codice);
+                        var sql=sessionStorage.getItem('Sql');
+                        getArticolo(codice,sql);
                         getImmaginni(codice);
                         }); //main
                       });
                     </script>
                 <div data-role="header" data-position="fixed" >
                     <a href="NocBible.html#corpi" rel="external" data-icon="back">Corpi</a>
+										<h1 id="prev"></h1>
                     <h1>SCHEDA DETTAGLIO CORPO</h1>
-                </div>
+										<h1 id="next"></h1>
+								</div>
                 <div data-role="content">
+                   
                     <p></p>
                     <div id="thumbnail" class="wimage"></div>
                     <br><br>
@@ -82,7 +85,7 @@
                             <li><a href="NocBible.html" rel="external" data-inline="true" ><img src="home_ico.png" width="24" height="20"></a></li>
                             <li><a href="./immagini.html" data-ajax="false"><img src="otherpics_ico.png" width="24" height="20"></a></li>
                             <li><a id="mailto" href="ciao" title="Condivi per e-mail" alt="Condividi per Email"  rel="external"  data-inline="true" ><img src="share_ico.png" width="24" height="20"></a></li>
-                            <li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.newoldcamera.com" title="Condividi questa pagina su Facebook" rel="external" data-inline="true" ><img src="sharefacebook.png" width="20" height="20"></a></li>
+														<li><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.newoldcamera.com" title="Condividi questa pagina su Facebook" rel="external" data-inline="true" ><img src="sharefacebook.png" width="20" height="20"></a></li>
                             <li><a href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=httphttp%3A%2F%2Fwww.newoldcamera.com" title="Condividi questa pagina su googleplus" rel="external" data-inline="true" ><img src="sharegoogle.png" width="20" height="20"></a></li> 
                         </ul>
                     </div>

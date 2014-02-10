@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AVFoundation/AVAudioPlayer.h"
 
 @interface ViewController : UIViewController <UIWebViewDelegate,UIAlertViewDelegate> {
     UIWebView* mWebView;
 }
 
-
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
 
 @end
