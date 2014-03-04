@@ -175,7 +175,7 @@
                           // Remove all old tiles.
                           $('.tile', $('#pic-frame')).remove();
                           // Create new tiles.
-                          numTiles = $('#difficulty').val();
+                          numTiles = $("input[name='difficulty']:checked").val();
                           tileSize = Math.ceil(700 / numTiles);
                           emptyGx = emptyGy = numTiles - 1;
                           tilesArray = [];
@@ -226,13 +226,8 @@
     <body class="ui-mobile-viewport ui-overlay-c" id="ui-page-top">
         <!-- Menu page -->
         <div id="menu" data-role="page" data-url="menu" class="ui-page ui-body-c ui-page-active">
-            
             <!-- Menu HEADER -->
             <div data-role="header" data-backbtn="false" class="ui-bar-a ui-header" role="banner">
-                <a href="NocBible.html" rel="external" data-icon="back" >Indietro</a>
-                <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
-                    NOC GAME - Photo Puzzle
-                </h1>
             </div>
             <!-- Menu CONTENT -->
             
@@ -300,69 +295,68 @@
                     
                 </div>
                 
-                
-                <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-                    <label for="difficulty" class="select ui-select"><span style="color: #c34043; font-weight: bold">SCEGLI LA DIFFICOLTA':</span></label>
-                    <div id class="ui-select">
-                        <select name="difficulty" id="difficulty" tabindex="-1">
-                            <option value="3">
-                                9 Tessere
-                            </option>
-                            <option value="4" selected="1">
-                                16 Tessere
-                            </option>
-                            <option value="5">
-                                25 Tessere
-                            </option>
-                            <option value="6">
-                                36 Tessere
-                            </option>
-                            <option value="7">
-                                42 Tessere
-                            </option>
-                            <option value="8">
-                                64 Tessere
-                            </option>
-                            <option value="9">
-                                81 Tessere
-                            </option>
-                            <option value="10">
-                                100 Tessere
-                            </option>
-                        </select>
-                    </div>
+                <div id="diff-choice" data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+                    <fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
+                        <div role="heading" class="ui-controlgroup-label">
+                            <span style="color: #c34043; font-weight: bold">SCEGLI IL NUMERO DI TESSERE:</span></div>
+                        <div class="ui-controlgroup-controls">
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty3" value="3" checked="checked">
+                                    <label for="difficulty3" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-corner-left ui-btn-up-c">
+                                        <img width="60" src="9.png"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty4" value="4">
+                                    <label for="difficulty4" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="16.png"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty5" value="5">
+                                    <label for="difficulty5" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="25.png"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty6" value="6">
+                                    <label for="difficulty6" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="36.png"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty7" value="7">
+                                    <label for="difficulty7" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="42.png"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty8" value="8">
+                                    <label for="difficulty8" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="64.png"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty9" value="9">
+                                    <label for="difficulty9" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
+                                        <img width="60" src="81.png"></label>
+                                    </div>
+                            
+                            <div class="ui-radio">
+                                <input type="radio" name="difficulty" id="difficulty10" value="10">
+                                    <label for="difficulty10" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-corner-right ui-controlgroup-last ui-btn-up-c">
+                                        <img width="60" src="100.png"></label>
+                                    </div>
+                            
+                        </div></fieldset>
+                    
                 </div>
                 <div id="buttonplay" style="padding-top: 30px">
                     <a id="play-button" href="#game" style="background: #c34043; color:#ffffff; " data-role="button" data-theme="c" class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-c"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">GIOCA!</span></span></a>
            		</div>
             </div><!-- fine menu CONTENT -->
             
-            <!-- Menu HIDDEN per scelta numero tessere -->
-            <!--<div class="ui-selectmenu-screen ui-screen-hidden">
-             </div>
-             <div class="ui-selectmenu ui-selectmenu-hidden ui-overlay-shadow ui-corner-all pop ui-body-a">
-             <div class="ui-header ui-bar-c" style="display: none;"><h1 class="ui-title"></h1><a data-iconpos="notext" data-icon="delete" href="#" class="ui-btn-left ui-btn ui-btn-up-c ui-btn-icon-notext ui-btn-corner-all ui-shadow" title="Close" data-theme="c" style="display: none;"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Chiudi</span><span class="ui-icon ui-icon-delete ui-icon-shadow"></span></span></a>	        </div>
-             <ul class="ui-selectmenu-list ui-listview" id="difficulty-menu" role="listbox" aria-labelledby="difficulty-button" data-theme="c">
-             <li data-icon="false" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li" role="option" tabindex="0" data-theme="c" aria-selected="false">
-             <div class="ui-btn-inner">
-             <div class="ui-btn-text"><a href="#" class="ui-link-inherit">
-             Facile (9 tessere)
-             </a></div>
-             </div></li>
-             <li data-icon="false" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li ui-btn-active" role="option" tabindex="-1" data-theme="c" aria-selected="false">
-             <div class="ui-btn-inner"><div class="ui-btn-text"><a href="#" class="ui-link-inherit" aria-selected="true">
-             Normale (16 Tessere)
-             </a></div>
-             </div></li>
-             <li data-icon="false" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li" role="option" tabindex="-1" data-theme="c" aria-selected="false">
-             <div class="ui-btn-inner">
-             <div class="ui-btn-text">
-             <a href="#" class="ui-link-inherit">
-             Difficile (25 Tessere)
-             </a></div>
-             </div></li>
-             </ul>
-             </div> -->
             
             <!-- Menu FOOTER -->
             <div id="footer" data-role="footer" data-position="fixed" >
@@ -373,8 +367,6 @@
         <div id="game" data-role="page" data-backbtn="false" data-url="game" >
             <!-- Game HEADER -->
             <div data-role="header" data-backbtn="false">
-                <a href="#menu" data-role="button" >Menù Principale</a>
-                <h1>NOC GAME - Photo Puzzle </h1>
             </div>
             <!-- Game CONTENT -->
             
@@ -411,11 +403,6 @@
         <div id="well-done" data-role="page" data-url="well-done">
             <!-- Well Done HEADER -->
             <div data-role="header" data-backbtn="false">
-                <a href="NocGame.html" rel="external" data-icon="back" >Menù</a>
-                <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
-                    COMPLIMENTI HAI VINTO!!!
-                </h1>
-                
             </div>
             <!-- Well Done CONTENT -->
             <div data-role="content">
