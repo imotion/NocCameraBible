@@ -391,7 +391,7 @@
         dataimage=[articolo loadImage:articolo.immagini[index] imageData:dataimage];
         vista=((UIImageView *)view);
         [vista setImage:[UIImage imageWithData:dataimage] ];
-        vista.image =[self imageWithImage:vista.image scaledToSize:self.carousel.bounds.size];
+       // vista.image =[self imageWithImage:vista.image scaledToSize:self.carousel.bounds.size];
         view.contentMode = UIViewContentModeScaleAspectFit;
     }
     return view;
