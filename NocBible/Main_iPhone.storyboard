@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="T3j-Xv-vhd">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
@@ -60,9 +60,9 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="uz8-2L-0cG">
-                        <barButtonItem key="leftBarButtonItem" title="Aggiorna" id="85N-OT-ZI6">
+                        <barButtonItem key="leftBarButtonItem" title="Preferenze" id="85N-OT-ZI6">
                             <connections>
-                                <action selector="Aggiorna:" destination="vXZ-lx-hvc" id="MYV-eJ-Vxh"/>
+                                <segue destination="mFz-OB-Yym" kind="modal" id="PE7-vn-lbV"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Info" id="CJW-jJ-VCd">
@@ -462,6 +462,70 @@ Selecting the Clip Subviews (clipsToBounds) checkbox causes subviews to be clipp
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsi-8z-hzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2302" y="295"/>
+        </scene>
+        <!--Preferenze-->
+        <scene sceneID="hj0-TN-hCh">
+            <objects>
+                <viewController id="mFz-OB-Yym" customClass="Preferenze" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0dx-1P-8rJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="udM-f5-wcP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vyu-Ug-mRr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="208" translatesAutoresizingMaskIntoConstraints="NO" id="MGs-d7-oCM">
+                                <rect key="frame" x="112" y="319" width="208" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Attivando questa funzione sarà possibile scaricare tutto il database di NocBible sul proprio dispositivo in modo da poterlo consultare "offline", quindi senza la connesione Internet. L'operazione richiede diverso tempo.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="BT8-qP-tBJ">
+                                <rect key="frame" x="108" y="159" width="199" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Seleziona "Aggiorna" per aggiornare il database, l'opzione svuolta i databae scaricati localmente quindi se si vuole avere i dati "off-line" sarà necessario riscaricarli.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-vM-Qmh">
+                                <rect key="frame" x="24" y="359" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scarica">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ScaricaDB:" destination="mFz-OB-Yym" eventType="touchUpInside" id="ozP-q9-gwa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUv-Dk-hn6">
+                                <rect key="frame" x="11" y="185" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aggiorna">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AggiornaDB:" destination="mFz-OB-Yym" eventType="touchUpInside" id="tRK-ot-REf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-QN-aFc">
+                                <rect key="frame" x="254" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chiudi">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Chiudi:" destination="mFz-OB-Yym" eventType="touchUpInside" id="uh2-f0-d4H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYB-IN-SxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="-668"/>
         </scene>
         <!--Copyright View Controller - Coyright-->
         <scene sceneID="Dyd-2c-f0k">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501FF58718C5ECA8001AABCC /* Preferenze.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FF58618C5ECA8001AABCC /* Preferenze.m */; };
 		5035926C18C5CE2100E9F28F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035926B18C5CE2100E9F28F /* iCarousel.m */; };
 		5035927018C5CE6100E9F28F /* cGestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035926F18C5CE6100E9F28F /* cGestService.m */; };
 		5035927618C5CE9200E9F28F /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5035927318C5CE9200E9F28F /* NSDataAdditions.m */; };
@@ -157,6 +158,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		501FF58518C5ECA8001AABCC /* Preferenze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferenze.h; sourceTree = "<group>"; };
+		501FF58618C5ECA8001AABCC /* Preferenze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferenze.m; sourceTree = "<group>"; };
 		5035926A18C5CE2100E9F28F /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		5035926B18C5CE2100E9F28F /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		5035926E18C5CE6100E9F28F /* cGestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cGestService.h; sourceTree = "<group>"; };
@@ -564,6 +567,8 @@
 				5035926D18C5CE2600E9F28F /* Carousel */,
 				652DEC2B1806FF9700A6A878 /* icone_launch */,
 				5076B99717F59393008D2F26 /* Reachability.h */,
+				501FF58518C5ECA8001AABCC /* Preferenze.h */,
+				501FF58618C5ECA8001AABCC /* Preferenze.m */,
 				5076B99817F5939B008D2F26 /* Reachability.m */,
 				50C8238017F4845B001BEFA7 /* AppDelegate.h */,
 				50C8238117F4845B001BEFA7 /* AppDelegate.m */,
@@ -848,6 +853,7 @@
 				5035929818C5D02600E9F28F /* CorpiViewController.m in Sources */,
 				5035928C18C5CFD000E9F28F /* DettagliCorpiViewController.m in Sources */,
 				5035928218C5CEFC00E9F28F /* MBProgressHUD.m in Sources */,
+				501FF58718C5ECA8001AABCC /* Preferenze.m in Sources */,
 				5035927E18C5CEC700E9F28F /* Articolo.m in Sources */,
 				5035929218C5D00A00E9F28F /* HomeViewController.m in Sources */,
 				5035928F18C5CFE400E9F28F /* CopyrightViewController.m in Sources */,
