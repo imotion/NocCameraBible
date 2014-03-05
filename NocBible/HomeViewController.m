@@ -38,7 +38,7 @@
        
        if(remoteHostStatus == NotReachable) {
            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"NocBible"
-                                                             message:@"Nessuna connesione internet disponibile.La connessione internet è necessario per consulare Noc Camera Bible."
+                                                             message:@"Nessuna connessione internet disponibile. La connessione internet è necessaria per consultare Noc Camera Bible."
                                                             delegate:self
                                                    cancelButtonTitle:@"OK"
                                                    otherButtonTitles:nil];
