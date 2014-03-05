@@ -282,7 +282,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">NOC Camera Bible
+                                        <string key="content">NOC Camera Bible
  
 COPYRIGHT 2013 - NEWOLDCAMERA S.R.L. - MILANO
 Questa applicazione è di proprietà della Newoldcamera S.r.l. (Società Unipersonale) avente:
@@ -303,7 +303,7 @@ La documentazione presentata nell'applicazione è puramente informativa e può e
   
 Si evidenzia che per i siti web, per i quali vengono forniti dei Link all'interno di questa applicazione, le NewOldCamera S.r.l. non ha alcuna responsabilità in relazione ai siti stessi e al loro contenuto, nè intende violare alcun diritto di Copyright.
   
-</mutableString>
+</string>
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <font key="NSFont" size="13" name="HelveticaNeue"/>
