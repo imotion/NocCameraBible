@@ -199,20 +199,20 @@
                           var bindEvents = function () {
                           // Trap 'tap' events on the picture frame.
                           $('#pic-frame2').bind('tap',function(evt) {
-                                               var $targ = $(evt.target);
-                                               // Has a tile been tapped?
-                                               if (!$targ.hasClass('tile')) return;
-                                               // If a tile has been tapped, then move the appropriate tile(s).
-                                               moveTiles($targ.data('tileObj'),true);
-                                               // Check if the puzzle is solved.
-                                               if (checkSolved()) {
-                                               // If puzzle solve, beep and vibrate.
-                                               phoneObject.beep(1);
-                                               phoneObject.vibrate(500);
-                                               // Pop up the well done screen.
-                                               $.mobile.changePage("#well-done","pop");
-                                               }
-                                               });
+                                                var $targ = $(evt.target);
+                                                // Has a tile been tapped?
+                                                if (!$targ.hasClass('tile')) return;
+                                                // If a tile has been tapped, then move the appropriate tile(s).
+                                                moveTiles($targ.data('tileObj'),true);
+                                                // Check if the puzzle is solved.
+                                                if (checkSolved()) {
+                                                // If puzzle solve, beep and vibrate.
+                                                phoneObject.beep(1);
+                                                phoneObject.vibrate(500);
+                                                // Pop up the well done screen.
+                                                $.mobile.changePage("#well-done","pop");
+                                                }
+                                                });
                           
                           $('#play-button').bind('click',setup);
                           };
@@ -233,9 +233,9 @@
             
             <div data-role="content" class="ui-content" role="main">
                 
-                <div id="pic-choice" data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+                <div id="pic-choice" data-role="fieldcontain" class="ui-field-contain2 ui-body ui-br">
                     <fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
-                        <div role="heading" class="ui-controlgroup-label"><span style="color: #c34043; font-weight: bold">SCEGLI LA FOTO PER IL PUZZLE:</span></div><div class="ui-controlgroup-controls">
+                        <div role="heading" class="ui-controlgroup-label"><span style="color: #c34043; font-weight: bold">SCEGLI LA FOTO PER IL PUZZLE:</span></div><div class="ui-controlgroup-controls2">
                             
                             <div class="ui-radio">
                                 <input type="radio" name="pic-choice" id="pic-choice-1" value="corpoip.jpg" checked="checked">
@@ -284,7 +284,7 @@
                                     <label for="pic-choice-8" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
                                         <img width="60" src="obi33.jpg"></label>
                                     </div>
-
+                            
                             <div class="ui-radio">
                                 <input type="radio" name="pic-choice" id="pic-choice-9" value="corpo66.jpg">
                                     <label for="pic-choice-9" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-corner-right ui-controlgroup-last ui-btn-up-c">
@@ -295,11 +295,11 @@
                     
                 </div>
                 
-                <div id="diff-choice" data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+                <div id="diff-choice" data-role="fieldcontain" class="ui-field-contain2 ui-body ui-br">
                     <fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
                         <div role="heading" class="ui-controlgroup-label">
                             <span style="color: #c34043; font-weight: bold">SCEGLI IL NUMERO DI TESSERE:</span></div>
-                        <div class="ui-controlgroup-controls">
+                        <div class="ui-controlgroup-controls2">
                             
                             <div class="ui-radio">
                                 <input type="radio" name="difficulty" id="difficulty3" value="3" checked="checked">
