@@ -12,6 +12,14 @@
             left:0px;
             top:0px;
         }
+		
+#pic-frame2 {
+            width:280px;
+            height:280px;                     
+            position:relative;
+            left:0px;
+            top:0px;
+        }
         
 #pic-guide {
             position:absolute;
@@ -34,7 +42,7 @@ min-height: 100%;
 }
 
 .ui-checkbox .ui-btn-icon-left .ui-btn-inner, .ui-radio .ui-btn-icon-left .ui-btn-inner {
-padding-left: 10px;
+padding-left: 0px;
 }
 
 .ui-btn-inner {
@@ -48,6 +56,13 @@ float: left;
 margin: 0 3px 0 0;
 }
 
+.ui-fullsize .ui-btn-inner, .ui-fullsize .ui-btn-inner {
+font-size: 16px;
+padding: .0em 0px; */
+}
+
+
+
 @media (min-width: 450px)
 .ui-field-contain label.ui-select {
 vertical-align: top;
@@ -55,3 +70,17 @@ display: inline-block;
 width: 11%;
 margin: 0 2% 0 0;
 }
+
+.ui-field-contain .ui-controlgroup-controls {
+width: 70%;
+display: inline-block;
+}
+
+@media (min-width: 450px)
+.ui-field-contain .ui-controlgroup-label {
+vertical-align: top;
+display: inline-block;
+width: 30%; 
+margin: 0 2% 0 0;
+}
+

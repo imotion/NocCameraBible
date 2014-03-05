@@ -50,7 +50,6 @@
 		5035932018C5D27800E9F28F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 503592C718C5D27700E9F28F /* background.png */; };
 		5035932118C5D27800E9F28F /* backhome.png in Resources */ = {isa = PBXBuildFile; fileRef = 503592C818C5D27700E9F28F /* backhome.png */; };
 		5035932218C5D27800E9F28F /* blogicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 503592C918C5D27700E9F28F /* blogicon.png */; };
-		5035932318C5D27800E9F28F /* congratulation.png in Resources */ = {isa = PBXBuildFile; fileRef = 503592CA18C5D27700E9F28F /* congratulation.png */; };
 		5035932418C5D27800E9F28F /* corpimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 503592CB18C5D27700E9F28F /* corpimg.png */; };
 		5035932618C5D27800E9F28F /* Default-Landscape-1024@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 503592CD18C5D27700E9F28F /* Default-Landscape-1024@2x~ipad.png */; };
 		5035932718C5D27800E9F28F /* Default-Landscape-1024~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 503592CE18C5D27700E9F28F /* Default-Landscape-1024~ipad.png */; };
@@ -144,6 +143,19 @@
 		652389D21833D670009ED99D /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C71833D670009ED99D /* Default-Portrait~ipad.png */; };
 		652389D31833D670009ED99D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C81833D670009ED99D /* Default.png */; };
 		652389D41833D670009ED99D /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C91833D670009ED99D /* Default~iphone.png */; };
+		6581D70318C7252900506026 /* NocGame2.html in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70218C7252900506026 /* NocGame2.html */; };
+		6581D70518C7253000506026 /* congratulation2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70418C7253000506026 /* congratulation2.png */; };
+		6581D70718C7253700506026 /* corpoip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70618C7253700506026 /* corpoip.jpg */; };
+		6581D70918C7253D00506026 /* corpo22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70818C7253D00506026 /* corpo22.jpg */; };
+		6581D70B18C7254200506026 /* corpo33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70A18C7254200506026 /* corpo33.jpg */; };
+		6581D70D18C7254700506026 /* corpo44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70C18C7254700506026 /* corpo44.jpg */; };
+		6581D70F18C7254C00506026 /* corpo55.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70E18C7254C00506026 /* corpo55.jpg */; };
+		6581D71118C7255100506026 /* corpo66.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D71018C7255100506026 /* corpo66.jpg */; };
+		6581D71318C7255600506026 /* obi11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D71218C7255600506026 /* obi11.jpg */; };
+		6581D71518C7255C00506026 /* obi22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D71418C7255C00506026 /* obi22.jpg */; };
+		6581D71718C7256100506026 /* obi33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D71618C7256100506026 /* obi33.jpg */; };
+		6581D71918C7258E00506026 /* congratulation.png in Resources */ = {isa = PBXBuildFile; fileRef = 6581D71818C7258E00506026 /* congratulation.png */; };
+		6581D71F18C72FBF00506026 /* PuzzleGameIPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6581D71E18C72FBF00506026 /* PuzzleGameIPhone.m */; };
 		65F61B2718C5E99300CCB5B7 /* 49.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F61B2618C5E99300CCB5B7 /* 49.png */; };
 /* End PBXBuildFile section */
 
@@ -216,7 +228,6 @@
 		503592C718C5D27700E9F28F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		503592C818C5D27700E9F28F /* backhome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backhome.png; sourceTree = "<group>"; };
 		503592C918C5D27700E9F28F /* blogicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogicon.png; sourceTree = "<group>"; };
-		503592CA18C5D27700E9F28F /* congratulation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = congratulation.png; sourceTree = "<group>"; };
 		503592CB18C5D27700E9F28F /* corpimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corpimg.png; sourceTree = "<group>"; };
 		503592CC18C5D27700E9F28F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		503592CD18C5D27700E9F28F /* Default-Landscape-1024@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape-1024@2x~ipad.png"; sourceTree = "<group>"; };
@@ -329,6 +340,20 @@
 		652389C71833D670009ED99D /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		652389C81833D670009ED99D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		652389C91833D670009ED99D /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		6581D70218C7252900506026 /* NocGame2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NocGame2.html; sourceTree = "<group>"; };
+		6581D70418C7253000506026 /* congratulation2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = congratulation2.png; sourceTree = "<group>"; };
+		6581D70618C7253700506026 /* corpoip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpoip.jpg; sourceTree = "<group>"; };
+		6581D70818C7253D00506026 /* corpo22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpo22.jpg; sourceTree = "<group>"; };
+		6581D70A18C7254200506026 /* corpo33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpo33.jpg; sourceTree = "<group>"; };
+		6581D70C18C7254700506026 /* corpo44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpo44.jpg; sourceTree = "<group>"; };
+		6581D70E18C7254C00506026 /* corpo55.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpo55.jpg; sourceTree = "<group>"; };
+		6581D71018C7255100506026 /* corpo66.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpo66.jpg; sourceTree = "<group>"; };
+		6581D71218C7255600506026 /* obi11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obi11.jpg; sourceTree = "<group>"; };
+		6581D71418C7255C00506026 /* obi22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obi22.jpg; sourceTree = "<group>"; };
+		6581D71618C7256100506026 /* obi33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obi33.jpg; sourceTree = "<group>"; };
+		6581D71818C7258E00506026 /* congratulation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = congratulation.png; sourceTree = "<group>"; };
+		6581D71D18C72FBF00506026 /* PuzzleGameIPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleGameIPhone.h; sourceTree = "<group>"; };
+		6581D71E18C72FBF00506026 /* PuzzleGameIPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleGameIPhone.m; sourceTree = "<group>"; };
 		65F61B2618C5E99300CCB5B7 /* 49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 49.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -424,12 +449,23 @@
 				503592C118C5D27700E9F28F /* 36.png */,
 				503592C318C5D27700E9F28F /* 64.png */,
 				503592C418C5D27700E9F28F /* 81.png */,
+				6581D71818C7258E00506026 /* congratulation.png */,
 				503592C518C5D27700E9F28F /* 100.png */,
+				6581D70418C7253000506026 /* congratulation2.png */,
+				6581D70218C7252900506026 /* NocGame2.html */,
+				6581D71218C7255600506026 /* obi11.jpg */,
+				6581D70618C7253700506026 /* corpoip.jpg */,
+				6581D70E18C7254C00506026 /* corpo55.jpg */,
+				6581D71018C7255100506026 /* corpo66.jpg */,
+				6581D70A18C7254200506026 /* corpo33.jpg */,
+				6581D71418C7255C00506026 /* obi22.jpg */,
+				6581D71618C7256100506026 /* obi33.jpg */,
 				503592C618C5D27700E9F28F /* 1536x2048.png */,
 				503592C718C5D27700E9F28F /* background.png */,
+				6581D70C18C7254700506026 /* corpo44.jpg */,
+				6581D70818C7253D00506026 /* corpo22.jpg */,
 				503592C818C5D27700E9F28F /* backhome.png */,
 				503592C918C5D27700E9F28F /* blogicon.png */,
-				503592CA18C5D27700E9F28F /* congratulation.png */,
 				503592CB18C5D27700E9F28F /* corpimg.png */,
 				503592CC18C5D27700E9F28F /* Default-568h@2x.png */,
 				503592CD18C5D27700E9F28F /* Default-Landscape-1024@2x~ipad.png */,
@@ -569,6 +605,8 @@
 				5076B99717F59393008D2F26 /* Reachability.h */,
 				501FF58518C5ECA8001AABCC /* Preferenze.h */,
 				501FF58618C5ECA8001AABCC /* Preferenze.m */,
+				6581D71D18C72FBF00506026 /* PuzzleGameIPhone.h */,
+				6581D71E18C72FBF00506026 /* PuzzleGameIPhone.m */,
 				5076B99817F5939B008D2F26 /* Reachability.m */,
 				50C8238017F4845B001BEFA7 /* AppDelegate.h */,
 				50C8238117F4845B001BEFA7 /* AppDelegate.m */,
@@ -724,8 +762,10 @@
 			files = (
 				5035935F18C5D27800E9F28F /* corpo.html in Resources */,
 				503592BA18C5D24D00E9F28F /* jquery.mobile-1.3.2.min.js in Resources */,
+				6581D71518C7255C00506026 /* obi22.jpg in Resources */,
 				5035929C18C5D04700E9F28F /* Main_iPad.storyboard in Resources */,
 				503592B618C5D24D00E9F28F /* code.photoswipe.jquery-3.0.5.min.js in Resources */,
+				6581D71318C7255600506026 /* obi11.jpg in Resources */,
 				503592B818C5D24D00E9F28F /* jquery-1.9.1.min.js in Resources */,
 				503592A918C5D24500E9F28F /* code.photoswipe-3.0.5.js in Resources */,
 				503592BB18C5D24D00E9F28F /* klass.min.js in Resources */,
@@ -737,7 +777,9 @@
 				503592B518C5D24D00E9F28F /* code.photoswipe.jquery-3.0.5.js in Resources */,
 				5035933818C5D27800E9F28F /* icons-18-white.png in Resources */,
 				5035935918C5D27800E9F28F /* obiettivo2.jpg in Resources */,
+				6581D70318C7252900506026 /* NocGame2.html in Resources */,
 				5035931718C5D27800E9F28F /* 9.png in Resources */,
+				6581D71118C7255100506026 /* corpo66.jpg in Resources */,
 				5035932818C5D27800E9F28F /* Default-Landscape@2x~ipad.png in Resources */,
 				5035937718C5D53800E9F28F /* right_2x.png in Resources */,
 				5035933B18C5D27800E9F28F /* icons.png in Resources */,
@@ -758,6 +800,7 @@
 				5035934E18C5D27800E9F28F /* corpo3.jpg in Resources */,
 				652389D41833D670009ED99D /* Default~iphone.png in Resources */,
 				5035934F18C5D27800E9F28F /* corpo4.jpg in Resources */,
+				6581D71918C7258E00506026 /* congratulation.png in Resources */,
 				5035936018C5D27800E9F28F /* immagini.html in Resources */,
 				5035935218C5D27800E9F28F /* NN1228_DSCN7197.jpg in Resources */,
 				5035934618C5D27800E9F28F /* share_ico18.png in Resources */,
@@ -767,6 +810,7 @@
 				5035934718C5D27800E9F28F /* sharefacebook.png in Resources */,
 				5035935118C5D27800E9F28F /* corpo6.jpg in Resources */,
 				5035936218C5D27800E9F28F /* info.html in Resources */,
+				6581D70518C7253000506026 /* congratulation2.png in Resources */,
 				5035935518C5D27800E9F28F /* obi2.jpg in Resources */,
 				5035933318C5D27800E9F28F /* gameimg.png in Resources */,
 				65F61B2718C5E99300CCB5B7 /* 49.png in Resources */,
@@ -779,12 +823,15 @@
 				5035934118C5D27800E9F28F /* obiettivimg.png in Resources */,
 				5035931918C5D27800E9F28F /* 25.png in Resources */,
 				5035933718C5D27800E9F28F /* icons-18-black.png in Resources */,
+				6581D70918C7253D00506026 /* corpo22.jpg in Resources */,
 				5035934418C5D27800E9F28F /* page.png in Resources */,
 				5035935A18C5D27800E9F28F /* obiettivo3.jpg in Resources */,
 				5035932018C5D27800E9F28F /* background.png in Resources */,
 				5035934C18C5D27800E9F28F /* corpo.jpg in Resources */,
 				5035936918C5D27800E9F28F /* jquery-mobile.css in Resources */,
+				6581D70718C7253700506026 /* corpoip.jpg in Resources */,
 				5035936B18C5D27800E9F28F /* jquery.mobile-1.2.0-rc.2.min.css in Resources */,
+				6581D70F18C7254C00506026 /* corpo55.jpg in Resources */,
 				5035935C18C5D27800E9F28F /* codecomputerlovelogo.gif in Resources */,
 				5035936518C5D27800E9F28F /* obiettivo.html in Resources */,
 				5035937318C5D4BC00E9F28F /* left_2x.png in Resources */,
@@ -810,6 +857,8 @@
 				5035932218C5D27800E9F28F /* blogicon.png in Resources */,
 				5035933F18C5D27800E9F28F /* logo_noc.png in Resources */,
 				50C8238D17F4845B001BEFA7 /* Images.xcassets in Resources */,
+				6581D70B18C7254200506026 /* corpo33.jpg in Resources */,
+				6581D71718C7256100506026 /* obi33.jpg in Resources */,
 				5035932118C5D27800E9F28F /* backhome.png in Resources */,
 				5035934B18C5D27800E9F28F /* accessorio2.jpg in Resources */,
 				5035933E18C5D27800E9F28F /* info2.png in Resources */,
@@ -818,6 +867,7 @@
 				5035929A18C5D03E00E9F28F /* Main_iPhone.storyboard in Resources */,
 				5035935818C5D27800E9F28F /* obiettivo1.jpg in Resources */,
 				5035931F18C5D27800E9F28F /* 1536x2048.png in Resources */,
+				6581D70D18C7254700506026 /* corpo44.jpg in Resources */,
 				5035934018C5D27800E9F28F /* noc_camera_bible.png in Resources */,
 				5035934318C5D27800E9F28F /* otherpics_ico18.png in Resources */,
 				50C8237C17F4845B001BEFA7 /* InfoPlist.strings in Resources */,
@@ -825,7 +875,6 @@
 				5035935418C5D27800E9F28F /* obi1.jpg in Resources */,
 				5035931E18C5D27800E9F28F /* 100.png in Resources */,
 				5035936818C5D27800E9F28F /* imot.min.css in Resources */,
-				5035932318C5D27800E9F28F /* congratulation.png in Resources */,
 				5035936E18C5D27800E9F28F /* NocBible.asmx in Resources */,
 				5035932718C5D27800E9F28F /* Default-Landscape-1024~ipad.png in Resources */,
 			);
@@ -862,6 +911,7 @@
 				5035929518C5D01E00E9F28F /* DettagliObViewController.m in Sources */,
 				5076B99917F5939B008D2F26 /* Reachability.m in Sources */,
 				5035927018C5CE6100E9F28F /* cGestService.m in Sources */,
+				6581D71F18C72FBF00506026 /* PuzzleGameIPhone.m in Sources */,
 				50C8237E17F4845B001BEFA7 /* main.m in Sources */,
 				5035928618C5CF9100E9F28F /* SchedaCell.m in Sources */,
 				5035928918C5CFB400E9F28F /* PuzzleGame.m in Sources */,

@@ -69,7 +69,7 @@
                           $tile.animate({
                                         left: ngx * tileSize,
                                         top: ngy * tileSize
-                                        }, 700);
+                                        }, 280);
                           } else {
                           $tile.css({
                                     left: ngx * tileSize,
@@ -173,10 +173,10 @@
                           // Prepare the completed 'solved' image.
                           $('#well-done-image').attr("src", imageUrl);
                           // Remove all old tiles.
-                          $('.tile', $('#pic-frame')).remove();
+                          $('.tile', $('#pic-frame2')).remove();
                           // Create new tiles.
                           numTiles = $("input[name='difficulty']:checked").val();
-                          tileSize = Math.ceil(700 / numTiles);
+                          tileSize = Math.ceil(280 / numTiles);
                           emptyGx = emptyGy = numTiles - 1;
                           tilesArray = [];
                           for (y = 0; y < numTiles; y++) {
@@ -187,7 +187,7 @@
                           }
                           var tile = tileObj(x, y);
                           tilesArray[y][x] = tile;
-                          $('#pic-frame').append(tile.$element);
+                          $('#pic-frame2').append(tile.$element);
                           }
                           }
                           // Shuffle the new tiles randomly.
@@ -198,7 +198,7 @@
                           
                           var bindEvents = function () {
                           // Trap 'tap' events on the picture frame.
-                          $('#pic-frame').bind('tap',function(evt) {
+                          $('#pic-frame2').bind('tap',function(evt) {
                                                var $targ = $(evt.target);
                                                // Has a tile been tapped?
                                                if (!$targ.hasClass('tile')) return;
@@ -238,57 +238,57 @@
                         <div role="heading" class="ui-controlgroup-label"><span style="color: #c34043; font-weight: bold">SCEGLI LA FOTO PER IL PUZZLE:</span></div><div class="ui-controlgroup-controls">
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-1" value="corpo.jpg" checked="checked">
+                                <input type="radio" name="pic-choice" id="pic-choice-1" value="corpoip.jpg" checked="checked">
                                     <label for="pic-choice-1" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-corner-left ui-btn-up-c">
-                                        <img width="60" src="corpo.jpg"></label>
+                                        <img width="60" src="corpoip.jpg"></label>
                                     </div>
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-2" value="corpo2.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-2" value="corpo22.jpg">
                                     <label for="pic-choice-2" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
-                                        <img width="60" src="corpo2.jpg"></label>
+                                        <img width="60" src="corpo22.jpg"></label>
                                     </div>
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-3" value="corpo3.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-3" value="corpo33.jpg">
                                     <label for="pic-choice-3" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
-                                        <img width="60" src="corpo3.jpg"></label>
+                                        <img width="60" src="corpo33.jpg"></label>
                                     </div>
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-4" value="corpo4.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-4" value="corpo44.jpg">
                                     <label for="pic-choice-4" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
-                                        <img width="60" src="corpo4.jpg"></label>
+                                        <img width="60" src="corpo44.jpg"></label>
                                     </div>
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-5" value="corpo5.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-5" value="corpo55.jpg">
                                     <label for="pic-choice-5" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
-                                        <img width="60" src="corpo5.jpg"></label>
+                                        <img width="60" src="corpo55.jpg"></label>
                                     </div>
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-6" value="obi1.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-6" value="obi11.jpg">
                                     <label for="pic-choice-6" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
-                                        <img width="60" src="obi1.jpg"></label>
+                                        <img width="60" src="obi11.jpg"></label>
                                     </div>
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-7" value="obi2.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-7" value="obi22.jpg">
                                     <label for="pic-choice-7" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
-                                        <img width="60" src="obi2.jpg"></label>
+                                        <img width="60" src="obi22.jpg"></label>
                                     </div>
                             
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-8" value="obi3.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-8" value="obi33.jpg">
                                     <label for="pic-choice-8" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-btn-up-c">
-                                        <img width="60" src="obi3.jpg"></label>
+                                        <img width="60" src="obi33.jpg"></label>
                                     </div>
-                            
+
                             <div class="ui-radio">
-                                <input type="radio" name="pic-choice" id="pic-choice-9" value="corpo6.jpg">
+                                <input type="radio" name="pic-choice" id="pic-choice-9" value="corpo66.jpg">
                                     <label for="pic-choice-9" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-radio-off ui-corner-right ui-controlgroup-last ui-btn-up-c">
-                                        <img width="60" src="corpo6.jpg"></label>
+                                        <img width="60" src="corpo66.jpg"></label>
                                     </div>
                             
                         </div></fieldset>
@@ -371,7 +371,7 @@
             <!-- Game CONTENT -->
             
             <div data-role="content">
-                <div id="pic-frame">
+                <div id="pic-frame2">
                     <div id="pic-guide" style="opacity: 0.2; background-image: url(corpo.jpg);">
                     </div>
                     <div class="tile" style="left: 70px; top: 140px; width: 68px; height: 68px; background-image: url(corpo.jpg); background-position: 0px 0px;"></div>
@@ -408,10 +408,10 @@
             <div data-role="content">
                 
                 <div id="centrato3" style=" width: 100%; text-align:center">
-                    <img id="well-done-image" width="700" height="700" src="corpo.jpg">
+                    <img id="well-done-image" width="280" height="280" src="corpoip.jpg">
                         </div>
                 <div data-role="popup" id="myPopup" data-history="false">
-                    <img id="well-done-image2" width="429" height="218" src="congratulation.png">
+                    <img id="well-done-image2" width="270" height="137" src="congratulation2.png">
                         </div>
                 <script type="text/javascript" language="JavaScript">
                     $(":jqmData(role='page'):last").on("pageshow", function(event) {
