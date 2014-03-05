@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "Reachability.h"
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -36,6 +35,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    // Do any additional setup after loading the view.
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
     NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"/Upload/Offile"]];
@@ -46,14 +46,13 @@
         
         if(remoteHostStatus == NotReachable) {
             UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"NocBible"
-                                                              message:@"Nessuna connessione internet disponibile.La connessione internet è necessaria per consulare Noc Camera Bible."
+                                                              message:@"Nessuna connessione internet disponibile. La connessione internet è necessaria per consultare Noc Camera Bible."
                                                              delegate:self
                                                     cancelButtonTitle:@"OK"
                                                     otherButtonTitles:nil];
             [message  show];
             
         }
-        
     }
 
 }
