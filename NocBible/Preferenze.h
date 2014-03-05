@@ -11,4 +11,8 @@
 
 @interface Preferenze : UIViewController <MBProgressHUDDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *btnoffline;
+@property (weak, nonatomic) IBOutlet UIButton *btnAggiona;
+@property (weak, nonatomic) IBOutlet UILabel *warning;
+
 @end

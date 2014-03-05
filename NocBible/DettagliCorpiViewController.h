@@ -42,7 +42,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tempi;
 @property (weak, nonatomic) IBOutlet UILabel *autoscatto;
 @property (weak, nonatomic) IBOutlet UILabel *occhielli;
-@property (weak, nonatomic) IBOutlet UILabel *note;
+@property (weak, nonatomic) IBOutlet UITextView *note;
 @property (strong,nonatomic) cElencoArticoli *articoli;
 
 

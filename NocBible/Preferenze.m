@@ -8,6 +8,7 @@
 
 #import "Preferenze.h"
 #import "cElencoArticoli.h"
+#import "Reachability.h"
 @interface Preferenze ()
 
 @end
@@ -23,13 +24,58 @@
     return self;
 }
 
+- (BOOL)checkInternet
+{
+    Reachability *reachability = [Reachability reachabilityWithHostName:@"test.newoldcamera.it"];
+    
+    NetworkStatus remoteHostStatus = [reachability currentReachabilityStatus];
+    
+    if(remoteHostStatus == NotReachable)
+        return NO;
+        
+    return YES;
+}
+
+-(BOOL)offLineMode
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
+    NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"/Upload/Offile"]];
+     if (![[NSFileManager defaultManager] fileExistsAtPath:fullPath])
+         return NO;
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if([self offLineMode])
+        [_warning setText:@"Modalità offline attiva"];
+    else
+        [_warning setText:@""];
+    if(![self checkInternet]) {
+        [_btnoffline setEnabled:NO];
+        [_btnAggiona setEnabled:NO];
+    } else {
+        [_btnoffline setEnabled:YES];
+        [_btnAggiona setEnabled:YES];
+    }
 	// Do any additional setup after loading the view.
 }
 - (IBAction)AggiornaDB:(id)sender {
+    MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:HUD];
+    HUD.delegate = self;
+    HUD.labelText=@"Aggiornamento database in conso....";
+    [HUD showWhileExecuting:@selector(AggiornaDb) onTarget:self withObject:nil animated:YES];
+}
+
+-(void)AggiornaDb
+{
+    cElencoArticoli *_articoli=[[cElencoArticoli alloc]init];
     [self SvuotaDB];
+    [_articoli LeggeCorpi];
+    [_articoli LeggeObbiettivi];
     UIAlertView *alert = [[UIAlertView alloc] init];
     [alert setTitle:@"NocBible"];
     [alert setMessage:@"Il Database di NocBible è stato aggiornato !"];
@@ -55,7 +101,7 @@
         [self.view addSubview:HUD];
         HUD.delegate = self;
         HUD.labelText=@"Download del database in corso....";
-        [HUD showWhileExecuting:@selector(AggiornaDB) onTarget:self withObject:nil animated:YES];
+        [HUD showWhileExecuting:@selector(ScaricaDB) onTarget:self withObject:nil animated:YES];
     }
 }
 
@@ -92,11 +138,16 @@
     }
 }
 
--(void)AggiornaDB
+-(void)ScaricaDB
 {
     cElencoArticoli *_articoli=[[cElencoArticoli alloc]init];
+    NSString *offline=[NSString  stringWithFormat:@"Offline mode"];
     [_articoli LeggeCorpi:YES];
     [_articoli LeggeObbiettivi:YES];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
+    NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"/Upload/Offile"]];
+    [[offline dataUsingEncoding:NSUTF8StringEncoding] writeToFile:fullPath atomically:NO];
 }
 
 @end

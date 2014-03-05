@@ -10,6 +10,6 @@
 #import "CorpiViewController.h"
 #import "MBProgressHUD.h"
 
-@interface HomeViewController :UIViewController <MBProgressHUDDelegate>
+@interface HomeViewController :UIViewController
 
 @end
