@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_noc.png" translatesAutoresizingMaskIntoConstraints="NO" id="uQ2-ws-IVq">
-                                <rect key="frame" x="10" y="71" width="103" height="61"/>
+                                <rect key="frame" x="20" y="72" width="103" height="61"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbi-b4-GGJ">
@@ -172,7 +172,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1843" y="246"/>
+            <point key="canvasLocation" x="1850" y="282"/>
         </scene>
         <!--Dettagli Corpi View Controller - Dettaglio-->
         <scene sceneID="BRx-X5-eUB">
@@ -630,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsi-8z-hzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="275"/>
+            <point key="canvasLocation" x="2273" y="282"/>
         </scene>
         <!--Preferenze-->
         <scene sceneID="hj0-TN-hCh">
@@ -644,22 +644,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="208" translatesAutoresizingMaskIntoConstraints="NO" id="MGs-d7-oCM">
-                                <rect key="frame" x="112" y="319" width="208" height="109"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="MGs-d7-oCM">
+                                <rect key="frame" x="130" y="319" width="170" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Attivando questa funzione sarà possibile scaricare tutto il database di NocBible sul proprio dispositivo in modo da poterlo consultare "offline", quindi senza la connesione Internet. L'operazione richiede diverso tempo.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199" translatesAutoresizingMaskIntoConstraints="NO" id="BT8-qP-tBJ">
-                                <rect key="frame" x="108" y="159" width="199" height="82"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="BT8-qP-tBJ">
+                                <rect key="frame" x="130" y="183" width="170" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Seleziona "Aggiorna" per aggiornare il database, l'opzione svuolta i databae scaricati localmente quindi se si vuole avere i dati "off-line" sarà necessario riscaricarli.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-vM-Qmh">
-                                <rect key="frame" x="24" y="359" width="63" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-vM-Qmh">
+                                <rect key="frame" x="20" y="319" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scarica">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -668,8 +668,8 @@
                                     <action selector="ScaricaDB:" destination="mFz-OB-Yym" eventType="touchUpInside" id="ozP-q9-gwa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUv-Dk-hn6">
-                                <rect key="frame" x="11" y="185" width="89" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUv-Dk-hn6">
+                                <rect key="frame" x="20" y="183" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Aggiorna">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -678,9 +678,12 @@
                                     <action selector="AggiornaDB:" destination="mFz-OB-Yym" eventType="touchUpInside" id="tRK-ot-REf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-QN-aFc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-QN-aFc">
                                 <rect key="frame" x="254" y="28" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="vN5-87-Y8p"/>
+                                </constraints>
                                 <state key="normal" title="Chiudi">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -688,8 +691,44 @@
                                     <action selector="Chiudi:" destination="mFz-OB-Yym" eventType="touchUpInside" id="uh2-f0-d4H"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_noc.png" translatesAutoresizingMaskIntoConstraints="NO" id="r9G-Wy-ymd">
+                                <rect key="frame" x="20" y="59" width="103" height="61"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Rcr-WJ-fYW"/>
+                                    <constraint firstAttribute="width" constant="103" id="ogX-EW-PWH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noc_camera_bible.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tir-Yx-7lN">
+                                <rect key="frame" x="137" y="476" width="170" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="VF8-4u-z5y"/>
+                                    <constraint firstAttribute="height" constant="72" id="tGh-Oc-KCE"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="udM-f5-wcP" firstAttribute="top" secondItem="2h4-vM-Qmh" secondAttribute="bottom" constant="219" id="1I4-UU-PUi"/>
+                            <constraint firstItem="BT8-qP-tBJ" firstAttribute="leading" secondItem="sUv-Dk-hn6" secondAttribute="trailing" constant="21" id="36C-ov-92k"/>
+                            <constraint firstItem="r9G-Wy-ymd" firstAttribute="top" secondItem="0dx-1P-8rJ" secondAttribute="bottom" constant="39" id="3Gr-dO-dIR"/>
+                            <constraint firstItem="2h4-vM-Qmh" firstAttribute="trailing" secondItem="sUv-Dk-hn6" secondAttribute="trailing" id="5el-CB-xhJ"/>
+                            <constraint firstItem="sUv-Dk-hn6" firstAttribute="top" secondItem="r9G-Wy-ymd" secondAttribute="bottom" constant="63" id="Hqj-hT-nYI"/>
+                            <constraint firstItem="2h4-vM-Qmh" firstAttribute="leading" secondItem="sUv-Dk-hn6" secondAttribute="leading" id="JzA-1D-agf"/>
+                            <constraint firstAttribute="trailing" secondItem="Tir-Yx-7lN" secondAttribute="trailing" constant="13" id="Lag-Ql-J6y"/>
+                            <constraint firstItem="MGs-d7-oCM" firstAttribute="leading" secondItem="BT8-qP-tBJ" secondAttribute="leading" id="O2G-8J-Ae0"/>
+                            <constraint firstItem="r9G-Wy-ymd" firstAttribute="leading" secondItem="vyu-Ug-mRr" secondAttribute="leading" constant="20" symbolic="YES" id="Rs7-um-dgm"/>
+                            <constraint firstItem="MGs-d7-oCM" firstAttribute="top" secondItem="2h4-vM-Qmh" secondAttribute="top" id="SIK-Pf-Ytj"/>
+                            <constraint firstAttribute="bottom" secondItem="Tir-Yx-7lN" secondAttribute="bottom" constant="20" symbolic="YES" id="Syn-UE-9Sf"/>
+                            <constraint firstItem="Tir-Yx-7lN" firstAttribute="top" secondItem="MGs-d7-oCM" secondAttribute="bottom" constant="48" id="Y31-sn-uaA"/>
+                            <constraint firstItem="BT8-qP-tBJ" firstAttribute="top" secondItem="sUv-Dk-hn6" secondAttribute="top" id="YQf-Hn-Jh5"/>
+                            <constraint firstItem="fNi-QN-aFc" firstAttribute="top" secondItem="0dx-1P-8rJ" secondAttribute="bottom" constant="8" id="ajc-LT-ren"/>
+                            <constraint firstAttribute="trailing" secondItem="fNi-QN-aFc" secondAttribute="trailing" constant="20" symbolic="YES" id="gw7-gR-ZAZ"/>
+                            <constraint firstItem="MGs-d7-oCM" firstAttribute="top" secondItem="BT8-qP-tBJ" secondAttribute="bottom" constant="54" id="mfw-rz-4lA"/>
+                            <constraint firstItem="sUv-Dk-hn6" firstAttribute="leading" secondItem="r9G-Wy-ymd" secondAttribute="leading" id="nJN-Mw-N1I"/>
+                            <constraint firstItem="BT8-qP-tBJ" firstAttribute="trailing" secondItem="fNi-QN-aFc" secondAttribute="trailing" id="xsx-1C-ZfI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYB-IN-SxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -765,7 +804,7 @@ NewOldCamera - Tutti i marchi riprodotti in questa applicazione sono di propriet
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnz-iw-9cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="-419"/>
+            <point key="canvasLocation" x="1850" y="-414"/>
         </scene>
         <!--Puzzle GameI Phone - Noc Game-->
         <scene sceneID="v7B-hM-mVp">

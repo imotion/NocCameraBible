@@ -56,6 +56,12 @@ float: left;
 margin: 0 3px 0 0;
 }
 
+
+.ui-field-contain2 .ui-controlgroup-controls2 {
+/* width: 70%; */
+display: inline-block;
+}
+
 .ui-fullsize .ui-btn-inner, .ui-fullsize .ui-btn-inner {
 font-size: 16px;
 padding: .0em 0px; */
@@ -67,14 +73,16 @@ padding: .0em 0px; */
 .ui-field-contain label.ui-select {
 vertical-align: top;
 display: inline-block;
-width: 11%;
+width: 30%;
 margin: 0 2% 0 0;
 }
 
+@media (min-width: 450px)
 .ui-field-contain .ui-controlgroup-controls {
-width: 70%;
+width: 65%;
 display: inline-block;
 }
+
 
 @media (min-width: 450px)
 .ui-field-contain .ui-controlgroup-label {
