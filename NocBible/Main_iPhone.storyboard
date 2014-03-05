@@ -522,21 +522,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="MGs-d7-oCM">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="MGs-d7-oCM">
                                 <rect key="frame" x="130" y="319" width="170" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Attivando questa funzione sarà possibile scaricare tutto il database di NocBible sul proprio dispositivo in modo da poterlo consultare "offline", quindi senza la connesione Internet. L'operazione richiede diverso tempo.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="BT8-qP-tBJ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="170" translatesAutoresizingMaskIntoConstraints="NO" id="BT8-qP-tBJ">
                                 <rect key="frame" x="130" y="183" width="170" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Seleziona "Aggiorna" per aggiornare il database, l'opzione svuolta i databae scaricati localmente quindi se si vuole avere i dati "off-line" sarà necessario riscaricarli.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-vM-Qmh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-vM-Qmh">
                                 <rect key="frame" x="20" y="319" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scarica">
@@ -546,7 +546,7 @@
                                     <action selector="ScaricaDB:" destination="mFz-OB-Yym" eventType="touchUpInside" id="ozP-q9-gwa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUv-Dk-hn6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUv-Dk-hn6">
                                 <rect key="frame" x="20" y="183" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Aggiorna">
@@ -556,12 +556,9 @@
                                     <action selector="AggiornaDB:" destination="mFz-OB-Yym" eventType="touchUpInside" id="tRK-ot-REf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-QN-aFc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNi-QN-aFc">
                                 <rect key="frame" x="254" y="28" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="vN5-87-Y8p"/>
-                                </constraints>
                                 <state key="normal" title="Chiudi">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -578,26 +575,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="udM-f5-wcP" firstAttribute="top" secondItem="2h4-vM-Qmh" secondAttribute="bottom" constant="219" id="1I4-UU-PUi"/>
-                            <constraint firstItem="BT8-qP-tBJ" firstAttribute="leading" secondItem="sUv-Dk-hn6" secondAttribute="trailing" constant="21" id="36C-ov-92k"/>
-                            <constraint firstItem="r9G-Wy-ymd" firstAttribute="top" secondItem="0dx-1P-8rJ" secondAttribute="bottom" constant="39" id="3Gr-dO-dIR"/>
-                            <constraint firstItem="2h4-vM-Qmh" firstAttribute="trailing" secondItem="sUv-Dk-hn6" secondAttribute="trailing" id="5el-CB-xhJ"/>
-                            <constraint firstItem="sUv-Dk-hn6" firstAttribute="top" secondItem="r9G-Wy-ymd" secondAttribute="bottom" constant="63" id="Hqj-hT-nYI"/>
-                            <constraint firstItem="2h4-vM-Qmh" firstAttribute="leading" secondItem="sUv-Dk-hn6" secondAttribute="leading" id="JzA-1D-agf"/>
-                            <constraint firstAttribute="trailing" secondItem="Tir-Yx-7lN" secondAttribute="trailing" constant="13" id="Lag-Ql-J6y"/>
-                            <constraint firstItem="MGs-d7-oCM" firstAttribute="leading" secondItem="BT8-qP-tBJ" secondAttribute="leading" id="O2G-8J-Ae0"/>
-                            <constraint firstItem="r9G-Wy-ymd" firstAttribute="leading" secondItem="vyu-Ug-mRr" secondAttribute="leading" constant="20" symbolic="YES" id="Rs7-um-dgm"/>
-                            <constraint firstItem="MGs-d7-oCM" firstAttribute="top" secondItem="2h4-vM-Qmh" secondAttribute="top" id="SIK-Pf-Ytj"/>
-                            <constraint firstAttribute="bottom" secondItem="Tir-Yx-7lN" secondAttribute="bottom" constant="20" symbolic="YES" id="Syn-UE-9Sf"/>
-                            <constraint firstItem="Tir-Yx-7lN" firstAttribute="top" secondItem="MGs-d7-oCM" secondAttribute="bottom" constant="48" id="Y31-sn-uaA"/>
-                            <constraint firstItem="BT8-qP-tBJ" firstAttribute="top" secondItem="sUv-Dk-hn6" secondAttribute="top" id="YQf-Hn-Jh5"/>
-                            <constraint firstItem="fNi-QN-aFc" firstAttribute="top" secondItem="0dx-1P-8rJ" secondAttribute="bottom" constant="8" id="ajc-LT-ren"/>
-                            <constraint firstAttribute="trailing" secondItem="fNi-QN-aFc" secondAttribute="trailing" constant="20" symbolic="YES" id="gw7-gR-ZAZ"/>
-                            <constraint firstItem="MGs-d7-oCM" firstAttribute="top" secondItem="BT8-qP-tBJ" secondAttribute="bottom" constant="54" id="mfw-rz-4lA"/>
-                            <constraint firstItem="sUv-Dk-hn6" firstAttribute="leading" secondItem="r9G-Wy-ymd" secondAttribute="leading" id="nJN-Mw-N1I"/>
-                            <constraint firstItem="BT8-qP-tBJ" firstAttribute="trailing" secondItem="fNi-QN-aFc" secondAttribute="trailing" id="xsx-1C-ZfI"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="btnAggiona" destination="sUv-Dk-hn6" id="fGX-jk-e5J"/>
