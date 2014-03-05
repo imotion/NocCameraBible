@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
 
 @implementation AppDelegate
 
@@ -35,7 +36,26 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
+    NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"/Upload/Offile"]];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:fullPath]) {
+        Reachability *reachability = [Reachability reachabilityWithHostName:@"test.newoldcamera.it"];
+        
+        NetworkStatus remoteHostStatus = [reachability currentReachabilityStatus];
+        
+        if(remoteHostStatus == NotReachable) {
+            UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"NocBible"
+                                                              message:@"Nessuna connessione internet disponibile.La connessione internet è necessaria per consulare Noc Camera Bible."
+                                                             delegate:self
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles:nil];
+            [message  show];
+            
+        }
+        
+    }
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

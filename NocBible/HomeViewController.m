@@ -27,27 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
-    NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"/Upload/Offile"]];
-   if (![[NSFileManager defaultManager] fileExistsAtPath:fullPath]) {
-       Reachability *reachability = [Reachability reachabilityWithHostName:@"test.newoldcamera.it"];
-       
-       NetworkStatus remoteHostStatus = [reachability currentReachabilityStatus];
-       
-       if(remoteHostStatus == NotReachable) {
-           UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"NocBible"
-                                                             message:@"Nessuna connesione internet disponibile.La connessione internet è necessario per consulare Noc Camera Bible."
-                                                            delegate:self
-                                                   cancelButtonTitle:@"OK"
-                                                   otherButtonTitles:nil];
-           [message  show];
-          
-       }
-
-   }
-}
+	}
 
 - (void)didReceiveMemoryWarning
 {
