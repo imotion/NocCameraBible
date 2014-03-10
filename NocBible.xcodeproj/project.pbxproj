@@ -143,6 +143,7 @@
 		652389D21833D670009ED99D /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C71833D670009ED99D /* Default-Portrait~ipad.png */; };
 		652389D31833D670009ED99D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C81833D670009ED99D /* Default.png */; };
 		652389D41833D670009ED99D /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 652389C91833D670009ED99D /* Default~iphone.png */; };
+		65671B6F18CDB24000347C1C /* M8CLICK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65671B6E18CDB24000347C1C /* M8CLICK.mp3 */; };
 		6581D70318C7252900506026 /* NocGame2.html in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70218C7252900506026 /* NocGame2.html */; };
 		6581D70518C7253000506026 /* congratulation2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70418C7253000506026 /* congratulation2.png */; };
 		6581D70718C7253700506026 /* corpoip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6581D70618C7253700506026 /* corpoip.jpg */; };
@@ -340,6 +341,7 @@
 		652389C71833D670009ED99D /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		652389C81833D670009ED99D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		652389C91833D670009ED99D /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		65671B6E18CDB24000347C1C /* M8CLICK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = M8CLICK.mp3; sourceTree = "<group>"; };
 		6581D70218C7252900506026 /* NocGame2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = NocGame2.html; sourceTree = "<group>"; };
 		6581D70418C7253000506026 /* congratulation2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = congratulation2.png; sourceTree = "<group>"; };
 		6581D70618C7253700506026 /* corpoip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corpoip.jpg; sourceTree = "<group>"; };
@@ -637,6 +639,7 @@
 		50C8237817F4845B001BEFA7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65671B6E18CDB24000347C1C /* M8CLICK.mp3 */,
 				50C8237917F4845B001BEFA7 /* NocBible-Info.plist */,
 				50C8237A17F4845B001BEFA7 /* InfoPlist.strings */,
 				50C8237D17F4845B001BEFA7 /* main.m */,
@@ -768,6 +771,7 @@
 				6581D71318C7255600506026 /* obi11.jpg in Resources */,
 				503592B818C5D24D00E9F28F /* jquery-1.9.1.min.js in Resources */,
 				503592A918C5D24500E9F28F /* code.photoswipe-3.0.5.js in Resources */,
+				65671B6F18CDB24000347C1C /* M8CLICK.mp3 in Resources */,
 				503592BB18C5D24D00E9F28F /* klass.min.js in Resources */,
 				5035936418C5D27800E9F28F /* NocGame.html in Resources */,
 				503592BD18C5D24D00E9F28F /* phonegap.0.9.4.js in Resources */,
